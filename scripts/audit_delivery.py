@@ -1,3 +1,5 @@
+"""LEGACY v1.0 delivery audit; use scripts/audit_v1_1.py for v1.1."""
+
 from __future__ import annotations
 
 import csv

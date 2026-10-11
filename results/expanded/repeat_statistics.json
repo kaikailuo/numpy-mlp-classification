@@ -1,0 +1,82 @@
+[
+  {
+    "family": "MNIST 基准",
+    "run_ids": [
+      "B-M",
+      "S-B-M-101",
+      "S-B-M-202"
+    ],
+    "raw_validation_accuracy": [
+      0.969,
+      0.9686,
+      0.967
+    ],
+    "mean_validation_accuracy": 0.9682,
+    "std_validation_accuracy": 0.0010583005244258455,
+    "n": 3
+  },
+  {
+    "family": "Momentum",
+    "run_ids": [
+      "O-MOM-0.05",
+      "S-O-MOM-101",
+      "S-O-MOM-202"
+    ],
+    "raw_validation_accuracy": [
+      0.9808,
+      0.978,
+      0.9778
+    ],
+    "mean_validation_accuracy": 0.9788666666666668,
+    "std_validation_accuracy": 0.0016772994167212239,
+    "n": 3
+  },
+  {
+    "family": "Focal",
+    "run_ids": [
+      "L-FOCAL-G2",
+      "S-L-FOCAL-101",
+      "S-L-FOCAL-202"
+    ],
+    "raw_validation_accuracy": [
+      0.9652,
+      0.9634,
+      0.962
+    ],
+    "mean_validation_accuracy": 0.9635333333333334,
+    "std_validation_accuracy": 0.001604161255402116,
+    "n": 3
+  },
+  {
+    "family": "L2+Dropout",
+    "run_ids": [
+      "R-L2DROP",
+      "S-R-L2DROP-101",
+      "S-R-L2DROP-202"
+    ],
+    "raw_validation_accuracy": [
+      0.9662,
+      0.9656,
+      0.9646
+    ],
+    "mean_validation_accuracy": 0.9654666666666666,
+    "std_validation_accuracy": 0.0008082903768654466,
+    "n": 3
+  },
+  {
+    "family": "CIFAR Adam",
+    "run_ids": [
+      "C-ADAM",
+      "S-C-ADAM-101",
+      "S-C-ADAM-202"
+    ],
+    "raw_validation_accuracy": [
+      0.5206,
+      0.5318,
+      0.5236
+    ],
+    "mean_validation_accuracy": 0.5253333333333333,
+    "std_validation_accuracy": 0.005797700693665892,
+    "n": 3
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "date": "2026-10-11",
+  "python": "3.12.13",
+  "installation": {
+    "artifact": "dist/a1_numpy_mlp-1.1.0-py3-none-any.whl",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2",
+    "pytest": "9.1.1"
+  },
+  "tests": {
+    "passed": 40,
+    "failed": 0,
+    "junit": "results/verification/v1_1/clean_env_pytest.xml"
+  },
+  "gradient_check": {
+    "status": "passed",
+    "evidence": "results/verification/v1_1/clean_env_gradient_check.json"
+  },
+  "mnist_training": {
+    "status": "completed",
+    "run": "results/reproduction/v1_1/B-M-clean",
+    "best_epoch": 10,
+    "validation_accuracy": 0.9684,
+    "validation_ce": 0.11437879720926285,
+    "checkpoint_reload_match": true,
+    "evaluation": "results/verification/v1_1/clean_env_B-M_validation.json"
+  },
+  "cifar_algorithm_switch": {
+    "status": "passed",
+    "config": "configs/v1_1/C-ADAM.toml",
+    "optimizer": "adam",
+    "smoke_steps": 5,
+    "evidence": "results/verification/v1_1/clean_env_cifar_adam_smoke.json"
+  },
+  "lightweight_reproduction": {
+    "status": "passed",
+    "input_only": [
+      "src",
+      "configs",
+      "experiments",
+      "results/baseline_v1",
+      "results/evidence/v1_1"
+    ],
+    "excluded": [
+      "results/formal",
+      "results/formal_v1_1",
+      "all checkpoints"
+    ],
+    "aggregate_runs": 47,
+    "output": "/tmp/a1-light-repro-20261011/results/expanded"
+  },
+  "note": "The clean baseline differs from the historical float32 run by 0.0006 validation accuracy because the stable translated-logit CE changes float32 rounding while fixed float64 forward/backward regression fixtures remain within 1e-8."
+}

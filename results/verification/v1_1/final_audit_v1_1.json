@@ -1,0 +1,27 @@
+{
+  "chart_pairs": 15,
+  "clean_env_pytest": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 40
+  },
+  "clean_environment_reproduction": "passed",
+  "failed_runs": 0,
+  "gradient_max_abs_error": 4.56128745884854e-11,
+  "historical_runs": 16,
+  "incomplete_aggregate_safety": "passed",
+  "legacy_pdf_preserved_sha256": "7a3f1bee253fe23784fbe378196459cf5acaf83f0da545e08e89241d2f3f2ae8",
+  "lightweight_reproduction": "passed",
+  "new_runs": 31,
+  "pytest": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 40
+  },
+  "repeat_runs": 10,
+  "selected_v1_1_test_count": 4,
+  "status": "passed",
+  "v1_1_final_paper_generated": false
+}

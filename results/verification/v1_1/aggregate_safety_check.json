@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "scenario": "L-LS-0.1 evidence directory intentionally omitted in an isolated temporary reproduction tree",
+  "command_exit_code": 1,
+  "error": "refusing incomplete aggregation; missing={'v1': [], 'v1_1': ['L-LS-0.1']}",
+  "preexisting_output_preserved": true,
+  "preexisting_marker": "/tmp/a1-aggregate-negative-20261011/results/expanded/preexisting_sentinel",
+  "unexpected_outputs_written": false
+}

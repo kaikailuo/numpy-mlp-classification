@@ -1,3 +1,9 @@
+"""LEGACY v1.0 report generator.
+
+This script is retained only to reproduce the historical English PDF. It is
+not part of the v1.1 delivery flow and must not be presented as a v1.1 paper.
+"""
+
 from __future__ import annotations
 
 import csv

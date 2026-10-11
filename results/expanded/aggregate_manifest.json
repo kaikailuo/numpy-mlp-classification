@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "historical_runs": 16,
+  "new_runs": 31,
+  "repeat_runs": 10,
+  "total_runs": 47,
+  "source_roots": [
+    "results/baseline_v1",
+    "results/evidence/v1_1"
+  ]
+}
