@@ -1,0 +1,15 @@
+{
+  "best_epoch": 10,
+  "best_val_accuracy": 0.8902,
+  "best_val_ce": 0.35286978154182436,
+  "command_wall_seconds": 1.3578060301952064,
+  "config_hash": "53ab6a3258c667bf216477c7cf55bde14c85471c22dca8cf99791dc4fffbff3f",
+  "dataset": "mnist",
+  "label": "D-MINI: B=128, n=5000",
+  "optimizer_steps": 400,
+  "parameter_count": 109386,
+  "run_id": "D-MINI",
+  "samples_seen": 50000,
+  "status": "completed",
+  "wall_seconds": 1.067135623190552
+}

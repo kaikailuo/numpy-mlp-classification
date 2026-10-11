@@ -1,0 +1,14 @@
+run_dir=/Users/luokaiwei/Projects/numpy-mlp-classification/results/formal_v1_1/S-L-FOCAL-202
+parameter_count=109386
+epoch=01 train_acc=0.9099 val_acc=0.9128 val_ce=0.4199 seconds=2.19
+epoch=02 train_acc=0.9280 val_acc=0.9266 val_ce=0.3435 seconds=0.99
+epoch=03 train_acc=0.9407 val_acc=0.9392 val_ce=0.3067 seconds=0.90
+epoch=04 train_acc=0.9476 val_acc=0.9450 val_ce=0.2756 seconds=0.90
+epoch=05 train_acc=0.9547 val_acc=0.9500 val_ce=0.2563 seconds=0.82
+epoch=06 train_acc=0.9571 val_acc=0.9542 val_ce=0.2373 seconds=0.85
+epoch=07 train_acc=0.9632 val_acc=0.9578 val_ce=0.2206 seconds=0.83
+epoch=08 train_acc=0.9664 val_acc=0.9614 val_ce=0.2125 seconds=0.81
+epoch=09 train_acc=0.9677 val_acc=0.9616 val_ce=0.2036 seconds=0.80
+epoch=10 train_acc=0.9701 val_acc=0.9608 val_ce=0.1996 seconds=0.84
+epoch=11 train_acc=0.9731 val_acc=0.9612 val_ce=0.1828 seconds=0.81
+epoch=12 train_acc=0.9730 val_acc=0.9620 val_ce=0.1801 seconds=0.84

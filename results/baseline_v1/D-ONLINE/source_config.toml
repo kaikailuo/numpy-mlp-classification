@@ -1,0 +1,33 @@
+[run]
+name = "mnist_batch_online"
+label = "D-ONLINE: B=1, n=5000"
+output_root = "results"
+[data]
+name = "mnist"
+root = "data/raw/mnist"
+split_seed = 20261011
+val_size = 5000
+preprocess = "scale01"
+[model]
+dims = [784, 128, 64, 10]
+dropout = 0.0
+init_seed = 42
+dropout_seed = 44
+[loss]
+name = "cross_entropy"
+l1_lambda = 0.0
+l2_lambda = 0.0
+[optimizer]
+name = "sgd"
+learning_rate = 0.05
+[training]
+epochs = 10
+batch_size = 1
+train_subset_size = 5000
+shuffle_seed = 43
+selection = "val_accuracy_then_val_ce"
+checkpoint_best = true
+[compute]
+dtype = "float32"
+backend = "cpu"
+

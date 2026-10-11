@@ -1,0 +1,15 @@
+{
+  "best_epoch": 12,
+  "best_val_accuracy": 0.9778,
+  "best_val_ce": 0.07637035682797431,
+  "command_wall_seconds": 21.644067563815042,
+  "config_hash": "85a926e1e99e5e9d5c85574b32ee1c8e80a1272142580ef9e78258e0108adf29",
+  "dataset": "mnist",
+  "label": "Adamax lr=0.003",
+  "optimizer_steps": 5160,
+  "parameter_count": 109386,
+  "run_id": "O-AMAX-0.003",
+  "samples_seen": 660000,
+  "status": "completed",
+  "wall_seconds": 20.49240121105686
+}

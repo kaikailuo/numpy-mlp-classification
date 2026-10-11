@@ -1,0 +1,14 @@
+run_dir=/Users/luokaiwei/Projects/numpy-mlp-classification/results/formal_v1_1/L-HINGE-1
+parameter_count=109386
+epoch=01 train_acc=0.9269 val_acc=0.9274 val_ce=0.4317 seconds=1.17
+epoch=02 train_acc=0.9559 val_acc=0.9522 val_ce=0.3458 seconds=1.11
+epoch=03 train_acc=0.9665 val_acc=0.9618 val_ce=0.3102 seconds=1.15
+epoch=04 train_acc=0.9711 val_acc=0.9642 val_ce=0.2721 seconds=1.14
+epoch=05 train_acc=0.9777 val_acc=0.9684 val_ce=0.2480 seconds=1.10
+epoch=06 train_acc=0.9807 val_acc=0.9708 val_ce=0.2293 seconds=1.07
+epoch=07 train_acc=0.9827 val_acc=0.9714 val_ce=0.2228 seconds=1.10
+epoch=08 train_acc=0.9843 val_acc=0.9704 val_ce=0.2138 seconds=1.32
+epoch=09 train_acc=0.9858 val_acc=0.9730 val_ce=0.1990 seconds=1.11
+epoch=10 train_acc=0.9870 val_acc=0.9730 val_ce=0.1943 seconds=1.74
+epoch=11 train_acc=0.9894 val_acc=0.9746 val_ce=0.1847 seconds=1.55
+epoch=12 train_acc=0.9902 val_acc=0.9746 val_ce=0.1772 seconds=1.91

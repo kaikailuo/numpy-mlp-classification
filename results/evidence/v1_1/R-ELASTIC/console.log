@@ -1,0 +1,14 @@
+run_dir=/Users/luokaiwei/Projects/numpy-mlp-classification/results/formal_v1_1/R-ELASTIC
+parameter_count=109386
+epoch=01 train_acc=0.9023 val_acc=0.9048 val_ce=0.3301 seconds=2.14
+epoch=02 train_acc=0.9310 val_acc=0.9256 val_ce=0.2503 seconds=1.69
+epoch=03 train_acc=0.9419 val_acc=0.9388 val_ce=0.2157 seconds=1.98
+epoch=04 train_acc=0.9493 val_acc=0.9470 val_ce=0.1888 seconds=1.69
+epoch=05 train_acc=0.9569 val_acc=0.9524 val_ce=0.1638 seconds=1.91
+epoch=06 train_acc=0.9618 val_acc=0.9550 val_ce=0.1489 seconds=1.72
+epoch=07 train_acc=0.9664 val_acc=0.9606 val_ce=0.1359 seconds=1.72
+epoch=08 train_acc=0.9683 val_acc=0.9608 val_ce=0.1318 seconds=1.79
+epoch=09 train_acc=0.9708 val_acc=0.9644 val_ce=0.1222 seconds=1.71
+epoch=10 train_acc=0.9745 val_acc=0.9688 val_ce=0.1152 seconds=1.58
+epoch=11 train_acc=0.9769 val_acc=0.9680 val_ce=0.1107 seconds=1.69
+epoch=12 train_acc=0.9782 val_acc=0.9676 val_ce=0.1062 seconds=2.29

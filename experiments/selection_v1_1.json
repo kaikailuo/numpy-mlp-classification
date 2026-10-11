@@ -39,5 +39,36 @@
     "S-C-ADAM-101",
     "S-C-ADAM-202"
   ],
-  "test_evaluation_status": "not_started"
+  "test_evaluation_status": "completed_once_after_freeze",
+  "validation_selection_frozen_at_local_date": "2026-10-11",
+  "selected_checkpoints": [
+    {
+      "run_id": "L-HINGE-1",
+      "role": "validation-selected new loss",
+      "checkpoint": "results/formal_v1_1/L-HINGE-1/best.npz",
+      "validation_accuracy": 0.9746,
+      "validation_ce": 0.17718894538879396
+    },
+    {
+      "run_id": "R-DROP-0.1",
+      "role": "validation-selected regularization extension",
+      "checkpoint": "results/formal_v1_1/R-DROP-0.1/best.npz",
+      "validation_accuracy": 0.9688,
+      "validation_ce": 0.10279814665317535
+    },
+    {
+      "run_id": "O-NAG-0.05",
+      "role": "validation-selected new optimizer",
+      "checkpoint": "results/formal_v1_1/O-NAG-0.05/best.npz",
+      "validation_accuracy": 0.983,
+      "validation_ce": 0.08444937885403633
+    },
+    {
+      "run_id": "C-MOM",
+      "role": "validation-selected CIFAR-10 extension",
+      "checkpoint": "results/formal_v1_1/C-MOM/best.npz",
+      "validation_accuracy": 0.5216,
+      "validation_ce": 1.4553723413467408
+    }
+  ]
 }

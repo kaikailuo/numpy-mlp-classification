@@ -119,7 +119,15 @@ def main() -> None:
         "run_ids": [item["run_id"] for item in MATRIX],
         "test_evaluation_status": "not_started",
     }
-    (ROOT / "experiments/selection_v1_1.json").write_text(json.dumps(freeze, indent=2, ensure_ascii=False) + "\n")
+    selection_path = ROOT / "experiments/selection_v1_1.json"
+    if selection_path.exists():
+        existing = json.loads(selection_path.read_text())
+        if existing.get("run_ids") != freeze["run_ids"]:
+            raise RuntimeError("existing v1.1 selection file has a different frozen matrix")
+        if not existing.get("selected_checkpoints"):
+            selection_path.write_text(json.dumps(freeze, indent=2, ensure_ascii=False) + "\n")
+    else:
+        selection_path.write_text(json.dumps(freeze, indent=2, ensure_ascii=False) + "\n")
     print(json.dumps({"generated": len(MATRIX), "output": str(OUTPUT)}, indent=2))
 
 

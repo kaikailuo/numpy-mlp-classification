@@ -1,0 +1,12 @@
+{
+  "batch_size": 128,
+  "dataset": "cifar10",
+  "estimated_full_epoch_seconds_train_only": 3.33252339014507,
+  "mean_step_seconds": 0.00947917764307931,
+  "p95_step_seconds": 0.012551523139700293,
+  "parameter_count": 820874,
+  "samples": 12800,
+  "samples_per_second": 13503.281067155864,
+  "steps": 100,
+  "wall_seconds": 0.9479177643079311
+}

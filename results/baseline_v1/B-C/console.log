@@ -1,0 +1,17 @@
+run_dir=results/formal/B-C
+parameter_count=820874
+epoch=01 train_acc=0.4314 val_acc=0.4098 val_ce=1.6794 seconds=5.64
+epoch=02 train_acc=0.4795 val_acc=0.4450 val_ce=1.5835 seconds=5.49
+epoch=03 train_acc=0.5105 val_acc=0.4672 val_ce=1.5388 seconds=5.58
+epoch=04 train_acc=0.5348 val_acc=0.4748 val_ce=1.4994 seconds=5.66
+epoch=05 train_acc=0.5494 val_acc=0.4776 val_ce=1.4928 seconds=5.38
+epoch=06 train_acc=0.5540 val_acc=0.4754 val_ce=1.4935 seconds=5.69
+epoch=07 train_acc=0.5888 val_acc=0.4966 val_ce=1.4482 seconds=5.72
+epoch=08 train_acc=0.5959 val_acc=0.5056 val_ce=1.4456 seconds=5.88
+epoch=09 train_acc=0.6078 val_acc=0.5018 val_ce=1.4462 seconds=5.77
+epoch=10 train_acc=0.6222 val_acc=0.5074 val_ce=1.4399 seconds=5.51
+epoch=11 train_acc=0.6302 val_acc=0.5052 val_ce=1.4399 seconds=6.09
+epoch=12 train_acc=0.6416 val_acc=0.5062 val_ce=1.4351 seconds=5.87
+epoch=13 train_acc=0.6449 val_acc=0.5040 val_ce=1.4512 seconds=6.44
+epoch=14 train_acc=0.6604 val_acc=0.5150 val_ce=1.4449 seconds=6.70
+epoch=15 train_acc=0.6648 val_acc=0.5020 val_ce=1.4602 seconds=6.94

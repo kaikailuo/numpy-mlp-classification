@@ -1,0 +1,15 @@
+{
+  "best_epoch": 4,
+  "best_val_accuracy": 0.972,
+  "best_val_ce": 0.14530981936454773,
+  "command_wall_seconds": 33.389519846998155,
+  "config_hash": "ef16ea7edf47cfe6161133a4f4c9becebc2293d6cb6813bb6761abca402f9513",
+  "dataset": "mnist",
+  "label": "RMSProp lr=0.01",
+  "optimizer_steps": 5160,
+  "parameter_count": 109386,
+  "run_id": "O-RMS-0.01",
+  "samples_seen": 660000,
+  "status": "completed",
+  "wall_seconds": 32.0024386330042
+}

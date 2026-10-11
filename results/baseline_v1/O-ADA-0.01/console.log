@@ -1,0 +1,14 @@
+run_dir=results/formal/O-ADA-0.01
+parameter_count=109386
+epoch=01 train_acc=0.9506 val_acc=0.9474 val_ce=0.1787 seconds=1.06
+epoch=02 train_acc=0.9647 val_acc=0.9584 val_ce=0.1425 seconds=1.00
+epoch=03 train_acc=0.9714 val_acc=0.9636 val_ce=0.1221 seconds=1.01
+epoch=04 train_acc=0.9754 val_acc=0.9656 val_ce=0.1117 seconds=1.07
+epoch=05 train_acc=0.9785 val_acc=0.9684 val_ce=0.1052 seconds=1.03
+epoch=06 train_acc=0.9807 val_acc=0.9680 val_ce=0.1009 seconds=1.02
+epoch=07 train_acc=0.9830 val_acc=0.9712 val_ce=0.0968 seconds=0.99
+epoch=08 train_acc=0.9839 val_acc=0.9720 val_ce=0.0942 seconds=1.04
+epoch=09 train_acc=0.9853 val_acc=0.9714 val_ce=0.0918 seconds=1.02
+epoch=10 train_acc=0.9865 val_acc=0.9732 val_ce=0.0896 seconds=0.99
+epoch=11 train_acc=0.9874 val_acc=0.9728 val_ce=0.0878 seconds=1.00
+epoch=12 train_acc=0.9884 val_acc=0.9746 val_ce=0.0854 seconds=1.04

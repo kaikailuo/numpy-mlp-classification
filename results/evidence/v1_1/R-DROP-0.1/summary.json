@@ -1,0 +1,15 @@
+{
+  "best_epoch": 12,
+  "best_val_accuracy": 0.9688,
+  "best_val_ce": 0.10279814665317535,
+  "command_wall_seconds": 19.57432589912787,
+  "config_hash": "c7292ae83fc30a766bad263445b17cb656d9df22b20de70406c7fba12c22e679",
+  "dataset": "mnist",
+  "label": "Dropout p=0.1",
+  "optimizer_steps": 5160,
+  "parameter_count": 109386,
+  "run_id": "R-DROP-0.1",
+  "samples_seen": 660000,
+  "status": "completed",
+  "wall_seconds": 18.23300903989002
+}

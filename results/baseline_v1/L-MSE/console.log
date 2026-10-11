@@ -1,0 +1,14 @@
+run_dir=results/formal/L-MSE
+parameter_count=109386
+epoch=01 train_acc=0.8464 val_acc=0.8490 val_ce=0.6486 seconds=0.91
+epoch=02 train_acc=0.8917 val_acc=0.8924 val_ce=0.4233 seconds=0.84
+epoch=03 train_acc=0.9050 val_acc=0.9024 val_ce=0.3703 seconds=0.81
+epoch=04 train_acc=0.9129 val_acc=0.9136 val_ce=0.3352 seconds=0.84
+epoch=05 train_acc=0.9196 val_acc=0.9152 val_ce=0.3139 seconds=1.07
+epoch=06 train_acc=0.9250 val_acc=0.9198 val_ce=0.2972 seconds=0.84
+epoch=07 train_acc=0.9290 val_acc=0.9218 val_ce=0.2839 seconds=0.85
+epoch=08 train_acc=0.9319 val_acc=0.9252 val_ce=0.2735 seconds=0.82
+epoch=09 train_acc=0.9359 val_acc=0.9316 val_ce=0.2626 seconds=1.07
+epoch=10 train_acc=0.9387 val_acc=0.9334 val_ce=0.2549 seconds=0.98
+epoch=11 train_acc=0.9404 val_acc=0.9334 val_ce=0.2484 seconds=0.91
+epoch=12 train_acc=0.9437 val_acc=0.9368 val_ce=0.2366 seconds=0.93

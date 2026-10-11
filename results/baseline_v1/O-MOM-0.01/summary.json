@@ -1,0 +1,15 @@
+{
+  "best_epoch": 12,
+  "best_val_accuracy": 0.976,
+  "best_val_ce": 0.08479182680845261,
+  "command_wall_seconds": 13.149864268954843,
+  "config_hash": "16028e9ca3cd2b013a6bdf402a94f59c96b7835f65483a1ce41caa24cbb5a354",
+  "dataset": "mnist",
+  "label": "O-MOM: lr=0.01",
+  "optimizer_steps": 5160,
+  "parameter_count": 109386,
+  "run_id": "O-MOM-0.01",
+  "samples_seen": 660000,
+  "status": "completed",
+  "wall_seconds": 12.828943639993668
+}

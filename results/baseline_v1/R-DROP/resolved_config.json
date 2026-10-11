@@ -1,0 +1,46 @@
+{
+  "compute": {
+    "backend": "cpu",
+    "dtype": "float32"
+  },
+  "data": {
+    "name": "mnist",
+    "preprocess": "scale01",
+    "root": "data/raw/mnist",
+    "split_seed": 20261011,
+    "val_size": 5000
+  },
+  "loss": {
+    "l1_lambda": 0.0,
+    "l2_lambda": 0.0,
+    "name": "cross_entropy"
+  },
+  "model": {
+    "dims": [
+      784,
+      128,
+      64,
+      10
+    ],
+    "dropout": 0.2,
+    "dropout_seed": 44,
+    "hidden_activation": "relu",
+    "init_seed": 42
+  },
+  "optimizer": {
+    "learning_rate": 0.05,
+    "name": "sgd"
+  },
+  "run": {
+    "label": "R-DROP: p=0.2",
+    "name": "mnist_dropout",
+    "output_root": "results"
+  },
+  "training": {
+    "batch_size": 128,
+    "checkpoint_best": true,
+    "epochs": 12,
+    "selection": "val_accuracy_then_val_ce",
+    "shuffle_seed": 43
+  }
+}

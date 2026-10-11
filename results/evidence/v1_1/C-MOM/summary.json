@@ -1,0 +1,15 @@
+{
+  "best_epoch": 7,
+  "best_val_accuracy": 0.5216,
+  "best_val_ce": 1.4553723413467408,
+  "command_wall_seconds": 109.50339527311735,
+  "config_hash": "3912f702674a28aea5a7810e9972654f8920e55f557aba06c93b52a075e3d761",
+  "dataset": "cifar10",
+  "label": "CIFAR-10 Momentum",
+  "optimizer_steps": 5280,
+  "parameter_count": 820874,
+  "run_id": "C-MOM",
+  "samples_seen": 675000,
+  "status": "completed",
+  "wall_seconds": 108.3684510581661
+}

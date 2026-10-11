@@ -1,0 +1,14 @@
+run_dir=/Users/luokaiwei/Projects/numpy-mlp-classification/results/formal_v1_1/R-L2-1E5
+parameter_count=109386
+epoch=01 train_acc=0.9020 val_acc=0.9052 val_ce=0.3302 seconds=1.85
+epoch=02 train_acc=0.9311 val_acc=0.9252 val_ce=0.2496 seconds=1.20
+epoch=03 train_acc=0.9421 val_acc=0.9396 val_ce=0.2146 seconds=1.23
+epoch=04 train_acc=0.9493 val_acc=0.9478 val_ce=0.1877 seconds=1.41
+epoch=05 train_acc=0.9570 val_acc=0.9530 val_ce=0.1627 seconds=1.41
+epoch=06 train_acc=0.9620 val_acc=0.9554 val_ce=0.1479 seconds=1.31
+epoch=07 train_acc=0.9669 val_acc=0.9608 val_ce=0.1350 seconds=1.64
+epoch=08 train_acc=0.9690 val_acc=0.9608 val_ce=0.1310 seconds=3.01
+epoch=09 train_acc=0.9712 val_acc=0.9638 val_ce=0.1215 seconds=1.37
+epoch=10 train_acc=0.9747 val_acc=0.9684 val_ce=0.1144 seconds=1.37
+epoch=11 train_acc=0.9772 val_acc=0.9682 val_ce=0.1099 seconds=1.24
+epoch=12 train_acc=0.9787 val_acc=0.9684 val_ce=0.1052 seconds=1.25

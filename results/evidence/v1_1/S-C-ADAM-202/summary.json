@@ -1,0 +1,15 @@
+{
+  "best_epoch": 7,
+  "best_val_accuracy": 0.5236,
+  "best_val_ce": 1.4152453536987304,
+  "command_wall_seconds": 158.88749174494296,
+  "config_hash": "66323cffc48b05addf9fc106e817866ae1b30c571b64fe95cac90257bfebb5f4",
+  "dataset": "cifar10",
+  "label": "CIFAR-10 Adam seed=202",
+  "optimizer_steps": 5280,
+  "parameter_count": 820874,
+  "run_id": "S-C-ADAM-202",
+  "samples_seen": 675000,
+  "status": "completed",
+  "wall_seconds": 157.8254492620472
+}

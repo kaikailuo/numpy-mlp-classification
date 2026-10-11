@@ -1,0 +1,15 @@
+{
+  "best_epoch": 12,
+  "best_val_accuracy": 0.9684,
+  "best_val_ce": 0.10588134285211563,
+  "command_wall_seconds": 15.126379258930683,
+  "config_hash": "5f2f09e397635d4c2f4412a8e6e51052cc14dcfeae74ed429fb7e3d812f7d5c0",
+  "dataset": "mnist",
+  "label": "R-L1: lambda=1e-5",
+  "optimizer_steps": 5160,
+  "parameter_count": 109386,
+  "run_id": "R-L1",
+  "samples_seen": 660000,
+  "status": "completed",
+  "wall_seconds": 14.76237420598045
+}

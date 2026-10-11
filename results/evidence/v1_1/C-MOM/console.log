@@ -1,0 +1,17 @@
+run_dir=/Users/luokaiwei/Projects/numpy-mlp-classification/results/formal_v1_1/C-MOM
+parameter_count=820874
+epoch=01 train_acc=0.4780 val_acc=0.4450 val_ce=1.5581 seconds=7.21
+epoch=02 train_acc=0.5339 val_acc=0.4758 val_ce=1.4752 seconds=7.02
+epoch=03 train_acc=0.5548 val_acc=0.4910 val_ce=1.4578 seconds=7.34
+epoch=04 train_acc=0.6000 val_acc=0.5066 val_ce=1.4157 seconds=7.41
+epoch=05 train_acc=0.6174 val_acc=0.5006 val_ce=1.4438 seconds=7.67
+epoch=06 train_acc=0.6460 val_acc=0.5088 val_ce=1.4376 seconds=7.65
+epoch=07 train_acc=0.6719 val_acc=0.5216 val_ce=1.4554 seconds=7.37
+epoch=08 train_acc=0.6769 val_acc=0.5096 val_ce=1.4913 seconds=6.78
+epoch=09 train_acc=0.7057 val_acc=0.5164 val_ce=1.5110 seconds=7.11
+epoch=10 train_acc=0.7209 val_acc=0.5194 val_ce=1.5359 seconds=6.75
+epoch=11 train_acc=0.7350 val_acc=0.5070 val_ce=1.5866 seconds=6.91
+epoch=12 train_acc=0.7473 val_acc=0.5094 val_ce=1.6269 seconds=6.86
+epoch=13 train_acc=0.7660 val_acc=0.5022 val_ce=1.6698 seconds=7.02
+epoch=14 train_acc=0.7897 val_acc=0.5108 val_ce=1.7022 seconds=7.05
+epoch=15 train_acc=0.7922 val_acc=0.4936 val_ce=1.8045 seconds=6.96

@@ -1,0 +1,14 @@
+run_dir=/Users/luokaiwei/Projects/numpy-mlp-classification/results/formal_v1_1/S-O-MOM-202
+parameter_count=109386
+epoch=01 train_acc=0.9596 val_acc=0.9564 val_ce=0.1442 seconds=1.47
+epoch=02 train_acc=0.9718 val_acc=0.9632 val_ce=0.1161 seconds=0.97
+epoch=03 train_acc=0.9818 val_acc=0.9718 val_ce=0.0914 seconds=0.94
+epoch=04 train_acc=0.9856 val_acc=0.9736 val_ce=0.0873 seconds=0.91
+epoch=05 train_acc=0.9806 val_acc=0.9652 val_ce=0.1150 seconds=0.95
+epoch=06 train_acc=0.9866 val_acc=0.9730 val_ce=0.0872 seconds=0.97
+epoch=07 train_acc=0.9919 val_acc=0.9768 val_ce=0.0832 seconds=0.95
+epoch=08 train_acc=0.9927 val_acc=0.9772 val_ce=0.0803 seconds=0.93
+epoch=09 train_acc=0.9941 val_acc=0.9768 val_ce=0.0861 seconds=0.93
+epoch=10 train_acc=0.9941 val_acc=0.9778 val_ce=0.0924 seconds=0.89
+epoch=11 train_acc=0.9931 val_acc=0.9724 val_ce=0.0978 seconds=0.96
+epoch=12 train_acc=0.9963 val_acc=0.9770 val_ce=0.0943 seconds=0.94

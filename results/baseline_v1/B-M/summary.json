@@ -1,0 +1,15 @@
+{
+  "best_epoch": 10,
+  "best_val_accuracy": 0.969,
+  "best_val_ce": 0.11422997294664383,
+  "command_wall_seconds": 13.333231060067192,
+  "config_hash": "ee621005b12ae04858bc8779c4fde69ca3ab6cc771e9da52d6bb25ae2b62f7fa",
+  "dataset": "mnist",
+  "label": "B-M: CE + SGD",
+  "optimizer_steps": 5160,
+  "parameter_count": 109386,
+  "run_id": "B-M",
+  "samples_seen": 660000,
+  "status": "completed",
+  "wall_seconds": 10.93782427511178
+}

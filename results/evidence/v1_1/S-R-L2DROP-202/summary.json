@@ -1,0 +1,15 @@
+{
+  "best_epoch": 12,
+  "best_val_accuracy": 0.9646,
+  "best_val_ce": 0.11453750863075256,
+  "command_wall_seconds": 13.609710469143465,
+  "config_hash": "032eab2ff1433157be864f6394886b4bde45d52f7f38eeb14c64a978de0ded9d",
+  "dataset": "mnist",
+  "label": "L2+Dropout seed=202",
+  "optimizer_steps": 5160,
+  "parameter_count": 109386,
+  "run_id": "S-R-L2DROP-202",
+  "samples_seen": 660000,
+  "status": "completed",
+  "wall_seconds": 12.756624554051086
+}

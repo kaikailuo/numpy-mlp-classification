@@ -1,0 +1,15 @@
+{
+  "best_epoch": 12,
+  "best_val_accuracy": 0.962,
+  "best_val_ce": 0.1800684048652649,
+  "command_wall_seconds": 12.595418257871643,
+  "config_hash": "bcd421e3aaba4d0127612400700a6d423334f05d8a3cf69b49c810cbd8598a36",
+  "dataset": "mnist",
+  "label": "Focal gamma=2 seed=202",
+  "optimizer_steps": 5160,
+  "parameter_count": 109386,
+  "run_id": "S-L-FOCAL-202",
+  "samples_seen": 660000,
+  "status": "completed",
+  "wall_seconds": 11.796643886016682
+}

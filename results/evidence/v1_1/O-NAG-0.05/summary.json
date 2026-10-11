@@ -1,0 +1,15 @@
+{
+  "best_epoch": 12,
+  "best_val_accuracy": 0.983,
+  "best_val_ce": 0.08444937885403633,
+  "command_wall_seconds": 20.68968792213127,
+  "config_hash": "0eaab65b84deb9b5339acd90b4fce4acff6e1d13e88d6c5b4346b6ad3a2f06f1",
+  "dataset": "mnist",
+  "label": "Nesterov lr=0.05",
+  "optimizer_steps": 5160,
+  "parameter_count": 109386,
+  "run_id": "O-NAG-0.05",
+  "samples_seen": 660000,
+  "status": "completed",
+  "wall_seconds": 19.36529764602892
+}

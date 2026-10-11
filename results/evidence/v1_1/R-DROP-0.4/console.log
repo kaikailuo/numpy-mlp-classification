@@ -1,0 +1,14 @@
+run_dir=/Users/luokaiwei/Projects/numpy-mlp-classification/results/formal_v1_1/R-DROP-0.4
+parameter_count=109386
+epoch=01 train_acc=0.8950 val_acc=0.8954 val_ce=0.3784 seconds=1.96
+epoch=02 train_acc=0.9195 val_acc=0.9160 val_ce=0.2827 seconds=1.76
+epoch=03 train_acc=0.9317 val_acc=0.9268 val_ce=0.2390 seconds=1.42
+epoch=04 train_acc=0.9409 val_acc=0.9366 val_ce=0.2109 seconds=1.51
+epoch=05 train_acc=0.9476 val_acc=0.9430 val_ce=0.1901 seconds=1.51
+epoch=06 train_acc=0.9522 val_acc=0.9484 val_ce=0.1767 seconds=1.42
+epoch=07 train_acc=0.9557 val_acc=0.9500 val_ce=0.1649 seconds=1.57
+epoch=08 train_acc=0.9589 val_acc=0.9548 val_ce=0.1539 seconds=1.57
+epoch=09 train_acc=0.9608 val_acc=0.9544 val_ce=0.1472 seconds=1.78
+epoch=10 train_acc=0.9641 val_acc=0.9574 val_ce=0.1382 seconds=1.43
+epoch=11 train_acc=0.9660 val_acc=0.9566 val_ce=0.1344 seconds=1.47
+epoch=12 train_acc=0.9678 val_acc=0.9594 val_ce=0.1295 seconds=1.48

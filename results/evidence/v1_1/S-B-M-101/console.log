@@ -1,0 +1,14 @@
+run_dir=/Users/luokaiwei/Projects/numpy-mlp-classification/results/formal_v1_1/S-B-M-101
+parameter_count=109386
+epoch=01 train_acc=0.9104 val_acc=0.9114 val_ce=0.3200 seconds=2.38
+epoch=02 train_acc=0.9327 val_acc=0.9302 val_ce=0.2490 seconds=0.96
+epoch=03 train_acc=0.9364 val_acc=0.9338 val_ce=0.2258 seconds=0.91
+epoch=04 train_acc=0.9519 val_acc=0.9494 val_ce=0.1815 seconds=0.86
+epoch=05 train_acc=0.9583 val_acc=0.9532 val_ce=0.1620 seconds=0.82
+epoch=06 train_acc=0.9625 val_acc=0.9568 val_ce=0.1479 seconds=0.81
+epoch=07 train_acc=0.9670 val_acc=0.9612 val_ce=0.1379 seconds=0.82
+epoch=08 train_acc=0.9696 val_acc=0.9630 val_ce=0.1267 seconds=0.80
+epoch=09 train_acc=0.9700 val_acc=0.9628 val_ce=0.1290 seconds=0.80
+epoch=10 train_acc=0.9719 val_acc=0.9634 val_ce=0.1237 seconds=0.78
+epoch=11 train_acc=0.9774 val_acc=0.9670 val_ce=0.1115 seconds=0.81
+epoch=12 train_acc=0.9783 val_acc=0.9686 val_ce=0.1094 seconds=0.83

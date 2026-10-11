@@ -1,0 +1,15 @@
+{
+  "best_epoch": 10,
+  "best_val_accuracy": 0.9688,
+  "best_val_ce": 0.11523754937648774,
+  "command_wall_seconds": 23.73214086308144,
+  "config_hash": "d573e9e64e3d7bed2bafb1661f5eddbbe468755e23b462ecd334855f68d0f455",
+  "dataset": "mnist",
+  "label": "Elastic Net L1=1e-5 L2=1e-4",
+  "optimizer_steps": 5160,
+  "parameter_count": 109386,
+  "run_id": "R-ELASTIC",
+  "samples_seen": 660000,
+  "status": "completed",
+  "wall_seconds": 22.20029016607441
+}

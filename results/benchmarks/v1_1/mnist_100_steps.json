@@ -1,0 +1,12 @@
+{
+  "batch_size": 128,
+  "dataset": "mnist",
+  "estimated_full_epoch_seconds_train_only": 1.0524819694182952,
+  "mean_step_seconds": 0.002449412583373487,
+  "p95_step_seconds": 0.003298300632741302,
+  "parameter_count": 109386,
+  "samples": 12800,
+  "samples_per_second": 52257.42729863429,
+  "steps": 100,
+  "wall_seconds": 0.2449412583373487
+}

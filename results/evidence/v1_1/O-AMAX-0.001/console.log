@@ -1,0 +1,14 @@
+run_dir=/Users/luokaiwei/Projects/numpy-mlp-classification/results/formal_v1_1/O-AMAX-0.001
+parameter_count=109386
+epoch=01 train_acc=0.9274 val_acc=0.9242 val_ce=0.2632 seconds=3.04
+epoch=02 train_acc=0.9464 val_acc=0.9416 val_ce=0.2008 seconds=1.45
+epoch=03 train_acc=0.9582 val_acc=0.9542 val_ce=0.1630 seconds=1.49
+epoch=04 train_acc=0.9641 val_acc=0.9616 val_ce=0.1436 seconds=1.61
+epoch=05 train_acc=0.9687 val_acc=0.9604 val_ce=0.1315 seconds=1.57
+epoch=06 train_acc=0.9717 val_acc=0.9648 val_ce=0.1221 seconds=1.46
+epoch=07 train_acc=0.9770 val_acc=0.9684 val_ce=0.1066 seconds=1.51
+epoch=08 train_acc=0.9791 val_acc=0.9708 val_ce=0.1032 seconds=1.64
+epoch=09 train_acc=0.9806 val_acc=0.9728 val_ce=0.0993 seconds=1.49
+epoch=10 train_acc=0.9829 val_acc=0.9736 val_ce=0.0950 seconds=1.61
+epoch=11 train_acc=0.9846 val_acc=0.9734 val_ce=0.0893 seconds=1.51
+epoch=12 train_acc=0.9865 val_acc=0.9738 val_ce=0.0864 seconds=1.61

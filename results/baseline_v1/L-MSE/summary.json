@@ -1,0 +1,15 @@
+{
+  "best_epoch": 12,
+  "best_val_accuracy": 0.9368,
+  "best_val_ce": 0.23664643092155457,
+  "command_wall_seconds": 11.457383944885805,
+  "config_hash": "3ca3f22eb03ec8d0967b9069b1201bc35b500ccc1dc16440d3dc81f7de0d29a3",
+  "dataset": "mnist",
+  "label": "L-MSE: Softmax MSE",
+  "optimizer_steps": 5160,
+  "parameter_count": 109386,
+  "run_id": "L-MSE",
+  "samples_seen": 660000,
+  "status": "completed",
+  "wall_seconds": 11.138626507017761
+}

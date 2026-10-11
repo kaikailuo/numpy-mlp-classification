@@ -1,0 +1,48 @@
+{
+  "compute": {
+    "backend": "cpu",
+    "dtype": "float32"
+  },
+  "data": {
+    "name": "cifar10",
+    "preprocess": "channel_standardize",
+    "root": "data/raw/cifar10",
+    "split_seed": 20261011,
+    "val_size": 5000
+  },
+  "loss": {
+    "l1_lambda": 0.0,
+    "l2_lambda": 0.0,
+    "name": "cross_entropy"
+  },
+  "model": {
+    "dims": [
+      3072,
+      256,
+      128,
+      10
+    ],
+    "dropout": 0.0,
+    "dropout_seed": 44,
+    "hidden_activation": "relu",
+    "hidden_init": "kaiming_normal",
+    "init_seed": 42,
+    "output_init": "xavier_normal"
+  },
+  "optimizer": {
+    "learning_rate": 0.01,
+    "name": "sgd"
+  },
+  "run": {
+    "label": "B-C: CE + SGD",
+    "name": "cifar10_baseline",
+    "output_root": "results"
+  },
+  "training": {
+    "batch_size": 128,
+    "checkpoint_best": true,
+    "epochs": 15,
+    "selection": "val_accuracy_then_val_ce",
+    "shuffle_seed": 43
+  }
+}

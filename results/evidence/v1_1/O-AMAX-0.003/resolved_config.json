@@ -1,0 +1,51 @@
+{
+  "compute": {
+    "backend": "cpu",
+    "dtype": "float32"
+  },
+  "data": {
+    "name": "mnist",
+    "preprocess": "scale01",
+    "root": "data/raw/mnist",
+    "split_seed": 20261011,
+    "val_size": 5000
+  },
+  "loss": {
+    "l1_lambda": 0.0,
+    "l2_lambda": 0.0,
+    "name": "cross_entropy"
+  },
+  "model": {
+    "dims": [
+      784,
+      128,
+      64,
+      10
+    ],
+    "dropout": 0.0,
+    "dropout_seed": 44,
+    "hidden_activation": "relu",
+    "hidden_init": "kaiming_normal",
+    "init_seed": 42,
+    "output_init": "xavier_normal"
+  },
+  "optimizer": {
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "eps": 1e-08,
+    "learning_rate": 0.003,
+    "name": "adamax"
+  },
+  "run": {
+    "label": "Adamax lr=0.003",
+    "name": "o_amax_0.003",
+    "output_root": "results/formal_v1_1"
+  },
+  "training": {
+    "batch_size": 128,
+    "checkpoint_best": true,
+    "epochs": 12,
+    "selection": "val_accuracy_then_val_ce",
+    "shuffle_seed": 43
+  }
+}

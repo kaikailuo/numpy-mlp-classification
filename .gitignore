@@ -13,6 +13,12 @@ results/*/
 !results/benchmarks/**
 !results/verification/
 !results/verification/**
+!results/evidence/
+!results/evidence/**
+!results/baseline_v1/
+!results/baseline_v1/**
+!results/expanded/
+!results/expanded/**
 tmp/
 dist/
 *.zip
