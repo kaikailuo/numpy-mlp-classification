@@ -1,0 +1,15 @@
+{
+  "selection_metric": "validation accuracy, then validation CE, then earlier epoch",
+  "shared_model": [784, 128, 64, 10],
+  "shared_epochs": 12,
+  "shared_batch_size": 128,
+  "shared_init_seed": 42,
+  "shared_shuffle_seed": 43,
+  "candidates": {
+    "sgd": [0.05, 0.1],
+    "momentum": [0.01, 0.05],
+    "adagrad": [0.01, 0.05],
+    "adam": [0.001, 0.003]
+  },
+  "note": "Candidate lists were frozen before formal optimizer runs. The baseline run supplies SGD lr=0.05."
+}

@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+data/raw/
+data/splits/*.npz
+results/*/
+!results/README.md
+tmp/
+dist/
+*.zip
+
