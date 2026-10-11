@@ -1,8 +1,8 @@
 import numpy as np
 
-from a1_mlp.losses import SoftmaxCrossEntropy
-from a1_mlp.model import MLP
-from a1_mlp.optimizers import SGD
+from src.nn.losses import SoftmaxCrossEntropy
+from src.nn.model import MLP
+from src.optim.optimizers import SGD
 
 
 def test_tiny_set_reaches_full_accuracy() -> None:

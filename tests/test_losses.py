@@ -1,6 +1,6 @@
 import numpy as np
 
-from a1_mlp.losses import SoftmaxCrossEntropy, SoftmaxMSE, softmax
+from src.nn.losses import SoftmaxCrossEntropy, SoftmaxMSE, softmax
 
 
 def finite_difference(loss, logits, labels, index, h=1e-5):
@@ -18,6 +18,13 @@ def test_stable_cross_entropy_extreme_logits() -> None:
     assert np.isfinite(loss)
     assert np.isfinite(grad).all()
     assert np.allclose(softmax(logits).sum(axis=1), 1.0)
+
+
+def test_float32_large_tied_logits_preserve_log_two() -> None:
+    logits = np.asarray([[1e20, 1e20]], dtype=np.float32)
+    value, gradient = SoftmaxCrossEntropy().value_and_grad(logits, np.asarray([0]))
+    assert np.isclose(value, np.log(2.0), rtol=1e-6)
+    assert np.allclose(gradient, [[-0.5, 0.5]])
 
 
 def test_cross_entropy_gradient() -> None:

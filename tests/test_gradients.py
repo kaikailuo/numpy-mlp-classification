@@ -1,8 +1,8 @@
 import numpy as np
 
-from a1_mlp.layers import Dense
-from a1_mlp.losses import SoftmaxCrossEntropy
-from a1_mlp.model import MLP
+from src.nn.layers import Dense
+from src.nn.losses import SoftmaxCrossEntropy
+from src.nn.model import MLP
 
 
 def relative_error(a, b):

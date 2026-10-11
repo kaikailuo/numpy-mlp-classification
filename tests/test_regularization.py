@@ -1,7 +1,7 @@
 import numpy as np
 
-from a1_mlp.layers import Parameter
-from a1_mlp.regularization import add_regularization_grads, regularization_loss
+from src.nn.layers import Parameter
+from src.nn.regularization import add_regularization_grads, regularization_loss
 
 
 def test_l1_l2_loss_and_gradient_weights_only() -> None:

@@ -1,7 +1,7 @@
 import numpy as np
 
-from a1_mlp.layers import Parameter
-from a1_mlp.optimizers import AdaGrad, Adam, Momentum, SGD
+from src.nn.layers import Parameter
+from src.optim.optimizers import AdaGrad, Adam, Adamax, Momentum, NesterovMomentum, RMSProp, SGD
 
 
 def parameter(name="p"):
@@ -42,4 +42,31 @@ def test_optimizer_state_is_independent_by_name() -> None:
     optimizer = Momentum(0.1)
     optimizer.step([first, second])
     assert optimizer.velocity["a"] is not optimizer.velocity["b"]
+
+
+def test_rmsprop_two_steps() -> None:
+    p = parameter()
+    optimizer = RMSProp(0.1, rho=0.9, eps=0.0)
+    optimizer.step([p])
+    expected_first = np.asarray([1.0, -2.0]) - 0.1 * p.grad / np.sqrt(0.1 * p.grad**2)
+    assert np.allclose(p.data, expected_first)
+    optimizer.step([p])
+    expected_second = expected_first - 0.1 * p.grad / np.sqrt(0.19 * p.grad**2)
+    assert np.allclose(p.data, expected_second)
+
+
+def test_nesterov_is_not_plain_momentum() -> None:
+    p = parameter()
+    NesterovMomentum(0.1, momentum=0.9).step([p])
+    assert np.allclose(p.data, [0.905, -1.9525])
+
+
+def test_adamax_two_steps_and_bias_correction() -> None:
+    p = parameter()
+    optimizer = Adamax(0.1, beta1=0.9, beta2=0.999, eps=0.0)
+    optimizer.step([p])
+    assert np.allclose(p.data, [0.9, -1.9])
+    optimizer.step([p])
+    assert np.allclose(p.data, [0.8, -1.8])
+    assert optimizer.step_count == 2
 

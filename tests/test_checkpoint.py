@@ -1,8 +1,8 @@
 import numpy as np
 import pytest
 
-from a1_mlp.checkpoints import load_checkpoint, save_checkpoint
-from a1_mlp.model import MLP
+from src.nn.model import MLP
+from src.training.checkpoints import load_checkpoint, save_checkpoint
 
 
 def metadata():

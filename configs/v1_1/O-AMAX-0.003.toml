@@ -1,0 +1,43 @@
+[run]
+name = "o_amax_0.003"
+label = "Adamax lr=0.003"
+output_root = "results/formal_v1_1"
+
+[data]
+name = "mnist"
+root = "data/raw/mnist"
+split_seed = 20261011
+val_size = 5000
+preprocess = "scale01"
+
+[model]
+dims = [784, 128, 64, 10]
+hidden_activation = "relu"
+hidden_init = "kaiming_normal"
+output_init = "xavier_normal"
+dropout = 0.0
+init_seed = 42
+dropout_seed = 44
+
+[loss]
+name = "cross_entropy"
+l1_lambda = 0.0
+l2_lambda = 0.0
+
+[optimizer]
+name = "adamax"
+learning_rate = 0.003
+beta1 = 0.9
+beta2 = 0.999
+eps = 1e-08
+
+[training]
+epochs = 12
+batch_size = 128
+shuffle_seed = 43
+selection = "val_accuracy_then_val_ce"
+checkpoint_best = true
+
+[compute]
+dtype = "float32"
+backend = "cpu"

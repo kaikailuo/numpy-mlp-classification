@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from a1_mlp.layers import Dense, Dropout, ReLU
+from src.nn.layers import Dense, Dropout, ReLU
 
 
 def test_dense_shapes_dtype_and_backward() -> None:

@@ -6,8 +6,10 @@ from pathlib import Path
 
 import numpy as np
 
-from a1_mlp.data import CIFAR_MD5, MNIST_FILES, file_md5, load_dataset
-from a1_mlp.reporting import write_json
+from src.data.cifar10 import CIFAR_MD5
+from src.data.datasets import load_dataset
+from src.data.mnist import MNIST_FILES, file_md5
+from src.utils.io import write_json
 
 
 def config(dataset: str) -> dict:

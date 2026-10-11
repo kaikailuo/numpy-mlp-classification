@@ -1,0 +1,53 @@
+{
+  "central_difference_h": 1e-05,
+  "dtype": "float64",
+  "full_mlp": {
+    "layers.0.bias": {
+      "max_abs_error": 1.1443290759416413e-11,
+      "max_relative_error": 2.1122447420214554e-11
+    },
+    "layers.0.weight": {
+      "max_abs_error": 2.476946425744586e-11,
+      "max_relative_error": 1.0202599539790541e-08
+    },
+    "layers.1.bias": {
+      "max_abs_error": 9.16189346611418e-12,
+      "max_relative_error": 2.675228231937531e-11
+    },
+    "layers.1.weight": {
+      "max_abs_error": 2.7841173810827513e-11,
+      "max_relative_error": 6.575973132872889e-11
+    }
+  },
+  "losses": {
+    "cross_entropy": {
+      "max_abs_error": 8.407547227862189e-12,
+      "max_relative_error": 2.769120939898069e-10
+    },
+    "focal": {
+      "max_abs_error": 2.343569782681243e-12,
+      "max_relative_error": 4.87161582362282e-11
+    },
+    "label_smoothing_cross_entropy": {
+      "max_abs_error": 1.0987724619049288e-11,
+      "max_relative_error": 1.1170890442477e-10
+    },
+    "multiclass_hinge": {
+      "max_abs_error": 9.46445699590015e-12,
+      "max_relative_error": 1.8928913992158602e-11
+    },
+    "softmax_mse": {
+      "max_abs_error": 2.9551317989873205e-12,
+      "max_relative_error": 1.002196622586063e-09
+    }
+  },
+  "regularization": {
+    "max_abs_error": 4.56128745884854e-11,
+    "max_relative_error": 2.1536645785859594e-10
+  },
+  "status": "passed",
+  "thresholds": {
+    "absolute": 1e-07,
+    "relative": 0.0001
+  }
+}

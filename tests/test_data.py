@@ -4,7 +4,8 @@ import struct
 import numpy as np
 import pytest
 
-from a1_mlp.data import read_idx_images, read_idx_labels, stratified_split
+from src.data.mnist import read_idx_images, read_idx_labels
+from src.data.splits import stratified_split
 
 
 def test_idx_readers(tmp_path) -> None:

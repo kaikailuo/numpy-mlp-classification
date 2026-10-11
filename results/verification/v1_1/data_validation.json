@@ -1,0 +1,139 @@
+{
+  "cifar10": {
+    "checksums": {
+      "cifar-10-python.tar.gz": "c58f30108f718f92721af3b95e74349a"
+    },
+    "dataset": "cifar10",
+    "preprocess": {
+      "fit_split": "effective_train",
+      "mean": [
+        125.30537414550781,
+        122.94649505615234,
+        113.87998962402344
+      ],
+      "name": "channel_standardize",
+      "std": [
+        62.97699737548828,
+        62.065547943115234,
+        66.67801666259766
+      ]
+    },
+    "probe": {
+      "dtype": "float32",
+      "finite": true
+    },
+    "shapes": {
+      "test": [
+        10000,
+        3072
+      ],
+      "train": [
+        45000,
+        3072
+      ],
+      "validation": [
+        5000,
+        3072
+      ]
+    },
+    "split": {
+      "algorithm": "stratified_v1_largest_remainder",
+      "dataset": "cifar10",
+      "label_sha256": "2b7cd2f24487317614016b72ffd53071c3062f592f0eb300c18a770d41ae1253",
+      "seed": 20261011,
+      "split_sha256": "3aa61de0e8e9e4bae6e2712fbf67a29c10d3c792c192f40106360e5b7e076110",
+      "train_class_counts": [
+        4500,
+        4500,
+        4500,
+        4500,
+        4500,
+        4500,
+        4500,
+        4500,
+        4500,
+        4500
+      ],
+      "train_size": 45000,
+      "val_class_counts": [
+        500,
+        500,
+        500,
+        500,
+        500,
+        500,
+        500,
+        500,
+        500,
+        500
+      ],
+      "val_size": 5000
+    },
+    "status": "passed"
+  },
+  "mnist": {
+    "checksums": {
+      "t10k-images-idx3-ubyte.gz": "9fb629c4189551a2d022fa330f9573f3",
+      "t10k-labels-idx1-ubyte.gz": "ec29112dd5afa0611ce80d1b7f02629c",
+      "train-images-idx3-ubyte.gz": "f68b3c2dcbeaaa9fbdd348bbdeb94873",
+      "train-labels-idx1-ubyte.gz": "d53e105ee54ea40749a09fcbcd1e9432"
+    },
+    "dataset": "mnist",
+    "preprocess": {
+      "fit_split": "none",
+      "name": "scale01"
+    },
+    "probe": {
+      "dtype": "float32",
+      "finite": true
+    },
+    "shapes": {
+      "test": [
+        10000,
+        784
+      ],
+      "train": [
+        55000,
+        784
+      ],
+      "validation": [
+        5000,
+        784
+      ]
+    },
+    "split": {
+      "algorithm": "stratified_v1_largest_remainder",
+      "dataset": "mnist",
+      "label_sha256": "1feba77c54802fa5339a11837ea4b2866434b83314ec45192930f1df69120c13",
+      "seed": 20261011,
+      "split_sha256": "69e9c4a5d2bdf9ac85395a8ef11819be4bd88a78b1dc733be641ba751644317f",
+      "train_class_counts": [
+        5429,
+        6180,
+        5462,
+        5620,
+        5355,
+        4969,
+        5425,
+        5743,
+        5364,
+        5453
+      ],
+      "train_size": 55000,
+      "val_class_counts": [
+        494,
+        562,
+        496,
+        511,
+        487,
+        452,
+        493,
+        522,
+        487,
+        496
+      ],
+      "val_size": 5000
+    },
+    "status": "passed"
+  }
+}
