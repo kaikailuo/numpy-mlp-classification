@@ -1,0 +1,72 @@
+[
+  {
+    "dataset": "cifar10",
+    "run_id": "B-C",
+    "test_accuracy": 0.5039,
+    "test_ce": 1.4424832042694091,
+    "validation_accuracy": 0.515
+  },
+  {
+    "dataset": "mnist",
+    "run_id": "B-M",
+    "test_accuracy": 0.9683,
+    "test_ce": 0.10559643881320953,
+    "validation_accuracy": 0.969
+  },
+  {
+    "dataset": "mnist",
+    "run_id": "L-MSE",
+    "test_accuracy": 0.9402,
+    "test_ce": 0.2191021653175354,
+    "validation_accuracy": 0.9368
+  },
+  {
+    "dataset": "mnist",
+    "run_id": "O-ADA-0.01",
+    "test_accuracy": 0.9764,
+    "test_ce": 0.0795678169965744,
+    "validation_accuracy": 0.9746
+  },
+  {
+    "dataset": "mnist",
+    "run_id": "O-ADAM-0.003",
+    "test_accuracy": 0.9781,
+    "test_ce": 0.08605702434778213,
+    "validation_accuracy": 0.9784
+  },
+  {
+    "dataset": "mnist",
+    "run_id": "O-MOM-0.05",
+    "test_accuracy": 0.9795,
+    "test_ce": 0.07736860573291779,
+    "validation_accuracy": 0.9808
+  },
+  {
+    "dataset": "mnist",
+    "run_id": "O-SGD-0.1",
+    "test_accuracy": 0.974,
+    "test_ce": 0.07792036650180817,
+    "validation_accuracy": 0.9756
+  },
+  {
+    "dataset": "mnist",
+    "run_id": "R-DROP",
+    "test_accuracy": 0.9691,
+    "test_ce": 0.10023274445533753,
+    "validation_accuracy": 0.9666
+  },
+  {
+    "dataset": "mnist",
+    "run_id": "R-L1",
+    "test_accuracy": 0.9706,
+    "test_ce": 0.09779049644470215,
+    "validation_accuracy": 0.9684
+  },
+  {
+    "dataset": "mnist",
+    "run_id": "R-L2",
+    "test_accuracy": 0.9688,
+    "test_ce": 0.10207904758453369,
+    "validation_accuracy": 0.9682
+  }
+]

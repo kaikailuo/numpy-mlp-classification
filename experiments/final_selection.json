@@ -1,0 +1,21 @@
+{
+  "frozen_at_local_date": "2026-10-11",
+  "selection_rule": "highest validation accuracy, then lowest validation CE, then earlier epoch",
+  "test_access_before_freeze": false,
+  "selected_checkpoints": [
+    {"run_id": "B-M", "role": "MNIST frozen baseline", "checkpoint": "results/formal/B-M/best.npz"},
+    {"run_id": "B-C", "role": "CIFAR-10 frozen baseline", "checkpoint": "results/formal/B-C/best.npz"},
+    {"run_id": "L-MSE", "role": "required loss comparison", "checkpoint": "results/formal/L-MSE/best.npz"},
+    {"run_id": "R-L1", "role": "required L1 comparison", "checkpoint": "results/formal/R-L1/best.npz"},
+    {"run_id": "R-L2", "role": "required L2 comparison", "checkpoint": "results/formal/R-L2/best.npz"},
+    {"run_id": "R-DROP", "role": "required Dropout comparison", "checkpoint": "results/formal/R-DROP/best.npz"},
+    {"run_id": "O-SGD-0.1", "role": "validation-selected SGD candidate", "checkpoint": "results/formal/O-SGD-0.1/best.npz"},
+    {"run_id": "O-MOM-0.05", "role": "validation-selected Momentum candidate", "checkpoint": "results/formal/O-MOM-0.05/best.npz"},
+    {"run_id": "O-ADA-0.01", "role": "validation-selected AdaGrad candidate", "checkpoint": "results/formal/O-ADA-0.01/best.npz"},
+    {"run_id": "O-ADAM-0.003", "role": "validation-selected Adam candidate", "checkpoint": "results/formal/O-ADAM-0.003/best.npz"}
+  ],
+  "excluded_from_test_table": {
+    "optimizer_nonselected_candidates": "not selected by validation",
+    "batch_strategy_runs": "controlled 5,000-sample method study; validation-only evidence is sufficient and avoids overinterpreting subset models"
+  }
+}

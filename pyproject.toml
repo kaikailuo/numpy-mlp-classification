@@ -16,6 +16,10 @@ a1-mlp = "a1_mlp.cli:main"
 dev = [
   "pytest>=8.3,<10",
 ]
+report = [
+  "pypdf>=6,<7",
+  "reportlab>=4.4,<5",
+]
 
 [build-system]
 requires = ["hatchling"]

@@ -1,0 +1,35 @@
+{
+  "central_difference_h": 1e-05,
+  "cross_entropy": {
+    "max_abs_error": 8.407545493138713e-12,
+    "max_relative_error": 2.7691203685472375e-10
+  },
+  "dtype": "float64",
+  "full_mlp": {
+    "layers.0.bias": {
+      "max_abs_error": 1.2416873085285829e-11,
+      "max_relative_error": 2.679666989859621e-11
+    },
+    "layers.0.weight": {
+      "max_abs_error": 2.476946425744586e-11,
+      "max_relative_error": 1.0202567574824387e-08
+    },
+    "layers.1.bias": {
+      "max_abs_error": 6.8622885152080926e-12,
+      "max_relative_error": 2.675260519522739e-11
+    },
+    "layers.1.weight": {
+      "max_abs_error": 2.6609159320400977e-11,
+      "max_relative_error": 6.575973132872889e-11
+    }
+  },
+  "softmax_mse": {
+    "max_abs_error": 2.9551317989873205e-12,
+    "max_relative_error": 1.002196622586063e-09
+  },
+  "status": "passed",
+  "thresholds": {
+    "absolute": 1e-07,
+    "relative": 0.0001
+  }
+}

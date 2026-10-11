@@ -7,6 +7,12 @@ data/raw/
 data/splits/*.npz
 results/*/
 !results/README.md
+!results/aggregate/
+!results/aggregate/**
+!results/benchmarks/
+!results/benchmarks/**
+!results/verification/
+!results/verification/**
 tmp/
 dist/
 *.zip
