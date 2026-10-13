@@ -1,0 +1,15 @@
+{
+  "best_epoch": 12,
+  "best_val_accuracy": 0.9746,
+  "best_val_ce": 0.08543895977735519,
+  "command_wall_seconds": 12.777515195077285,
+  "config_hash": "5e030e4b0d8440ab63eab781cbeb4c1bf66217dd1594d6ee058d632d164a1a49",
+  "dataset": "mnist",
+  "label": "O-ADA: lr=0.01",
+  "optimizer_steps": 5160,
+  "parameter_count": 109386,
+  "run_id": "O-ADA-0.01",
+  "samples_seen": 660000,
+  "status": "completed",
+  "wall_seconds": 12.46962346485816
+}

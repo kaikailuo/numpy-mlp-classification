@@ -2,11 +2,21 @@
 
 本仓库是北京邮电大学《神经网络与深度学习（理论）》A1 作业的 NumPy-only 多层感知机实现。前向传播、反向传播、损失求导、正则化、优化器与评估均由 NumPy 实现，不依赖 PyTorch、TensorFlow 或 JAX。
 
-v1.1 已完成源码重构、五类损失函数、七类优化器、正则化强度与组合、CIFAR-10 扩展以及五组配置的三随机种子复验。v1.0 的 16 组历史实验、历史 Checkpoint 与历史 PDF 均保留且未改写；v1.1 新增 31 次真实运行，其中 10 次为重复种子实验，成功 31、失败 0。
+v1.1 已完成源码重构、五类损失函数、七类优化器、正则化强度与组合、CIFAR-10 扩展以及五组配置的三随机种子复验。仓库保留 v1.0 的 16 次与 v1.1 的 31 次真实运行证据，其中 v1.1 包含 10 次重复种子实验，成功 31、失败 0。
 
-> **最终中文版 LaTeX 论文尚未制作，将在独立论文阶段完成。**
->
-> `output/pdf/A1_NumPy_MLP_Report.pdf` 仅是 v1.0 历史参考，不是 v1.1 最终论文；`report/generate_report.py` 是 Legacy 工具，不属于 v1.1 标准交付流程。
+最终实验报告：[2024211735-罗开炜-实验A1-实验报告.pdf](2024211735-罗开炜-实验A1-实验报告.pdf)。报告直接位于项目根目录，老师可在 GitHub 查看或下载；仓库链接即为课程提交入口。
+
+## 评审入口
+
+建议人工或 Agent 按以下顺序阅读，无需解压 ZIP 或重新训练：
+
+1. 根目录最终报告 PDF 与本 README：实验设计、关键结果和复现方式。
+2. `src/nn/`、`src/optim/`、`src/training/`、`src/data/`：NumPy 模型、求导、优化器、训练评估及数据处理。
+3. `configs/formal/`、`configs/v1_1/` 和 `experiments/selection_v1_1.json`：预声明配置及冻结选择。
+4. `results/expanded/all_runs_v1_1.csv`、`repeat_statistics.csv`、`selected_test_metrics_v1_1.csv` 和配套 PNG/PDF：47 次运行、重复统计与冻结后测试结果。
+5. `results/formal/`、`results/formal_v1_1/`：逐次运行的配置快照、指标、日志与训练曲线；`results/verification/`：已有测试、梯度检查和干净环境复现证据。
+
+Git 提交内容包含完整源码、配置、测试、结果与划分索引；模型只保留两份冻结选择清单中的 14 个模型及 1 个干净复验模型。完整数据集、虚拟环境、缓存、冗余权重和 `dist/` 不进入 Git。历史阶段材料仍保留在 `docs/` 与旧审计 JSON 中，其中旧报告路径和“论文未制作”等描述只代表当时状态；当前提交以根目录报告和本 README 为准。
 
 ## 关键结果
 
@@ -35,11 +45,12 @@ src/
 configs/formal/          # v1.0 的 16 组不可变配置
 configs/v1_1/            # v1.1 的 31 个预声明运行配置
 results/baseline_v1/     # v1.0 可提交轻量证据，不含 Checkpoint
-results/formal/          # v1.0 本地完整运行，Git 忽略
-results/formal_v1_1/     # v1.1 本地完整运行，Git 忽略
+results/formal/          # v1.0 完整运行证据及 10 个选中模型
+results/formal_v1_1/     # v1.1 完整运行证据及 4 个选中模型
 results/evidence/v1_1/   # v1.1 可提交轻量证据
 results/expanded/        # 47 次运行的表格与 PNG/PDF 图表
 results/verification/v1_1/
+data/splits/            # 固定划分索引与元数据，包含小型 NPZ
 docs/v1.1_实验结果与方法说明.md
 ```
 
@@ -137,14 +148,16 @@ MPLCONFIGDIR=/tmp/a1-mpl UV_CACHE_DIR=/tmp/a1-uv-cache \
 
 完整路径 B：安装依赖、下载并校验数据、运行 pytest 与梯度检查、训练一个 MNIST 基准、重载 Checkpoint 验证、再用 `configs/v1_1/C-ADAM.toml` 切换到 CIFAR-10/Adam。该路径已在独立 Python 3.12 环境实际通过，证据见 `results/verification/v1_1/clean_environment_reproduction.json`。
 
-## 打包与审计
+## 仓库提交与审计（ZIP 可选）
 
 ```bash
 UV_CACHE_DIR=/tmp/a1-uv-cache uv run python scripts/audit_v1_1.py
 UV_CACHE_DIR=/tmp/a1-uv-cache uv run python scripts/build_submission.py
 ```
 
-v1.1 包含源码、配置、轻量证据、汇总 CSV/JSON、图表、测试与方法材料；不含原始数据和 Checkpoint。历史 PDF 会清楚标记为 v1.0 Legacy，不能作为 v1.1 最终论文提交。
+`audit_v1_1.py` 只核对已有证据、图表、保留模型与根目录最终报告，不训练模型；当前交付核验写入 `results/verification/v1_1/repository_delivery_audit.json`，历史审计记录保持不变。
+
+日常提交使用 `git add -A`、`git commit`、`git push`，然后将仓库链接交给老师。可选打包脚本生成 `dist/numpy-mlp-classification.zip`，包含同一批实验材料与最终报告；ZIP 和构建产物不进入 Git。
 
 ## 已知边界
 

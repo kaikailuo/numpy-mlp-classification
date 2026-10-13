@@ -1,0 +1,18 @@
+{
+  "blas": "{'Compilers': {'c': {'name': 'clang', 'linker': 'ld64', 'version': '17.0.0', 'commands': 'cc'}, 'cython': {'name': 'cython', 'linker': 'cython', 'version': '3.3.0', 'commands': 'cython'}, 'c++': {'name': 'clang', 'linker': 'ld64', 'version': '17.0.0', 'commands': 'c++'}}, 'Machine Information': {'host': {'cpu': 'x86_64', 'family': 'x86_64', 'endian': 'little', 'system': 'darwin'}, 'build': {'cpu': 'x86_64', 'family': 'x86_64', 'endian': 'little', 'system': 'darwin'}}, 'Build Dependencies': {'blas': {'name': 'accelerate', 'found': True, 'version': 'unknown', 'detection method': 'system', 'include directory': 'unknown', 'lib directory': 'unknown', 'openblas configuration': 'unknown', 'pc file directory': 'unknown'}, 'lapack': {'name': 'accelerate', 'found': True, 'version': 'unknown', 'detection method': 'system', 'include directory': 'unknown', 'lib directory': 'unknown', 'openblas configuration': 'unknown', 'pc file directory': 'unknown'}}, 'Python Information': {'path': '/private/var/folders/20/jp1_0n3n7kndh6rnbqb5344m0000gn/T/build-env-a9peyscu/bin/python', 'version': '3.12'}, 'SIMD Extensions': {'baseline': ['X86_V2'], 'found': ['X86_V3'], 'not found': ['X86_V4', 'AVX512_ICL']}}",
+  "cpu_count": 8,
+  "cwd": "/Users/luokaiwei/Projects/numpy-mlp-classification",
+  "git_commit": "5cdabeb3f4e02e92c6d9ed20ccaaa0a1ecd9edd8",
+  "machine": "x86_64",
+  "numpy": "2.5.4",
+  "platform": "macOS-15.7.3-x86_64-i386-64bit",
+  "processor": "i386",
+  "python": "3.12.13 (main, Aug  5 2026, 15:39:26) [Clang 22.1.3 ]",
+  "python_executable": "/tmp/a1-v11-clean-20261011/bin/python",
+  "thread_environment": {
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "VECLIB_MAXIMUM_THREADS": null
+  }
+}

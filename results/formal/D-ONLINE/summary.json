@@ -1,0 +1,15 @@
+{
+  "best_epoch": 8,
+  "best_val_accuracy": 0.9168,
+  "best_val_ce": 0.4044961206912994,
+  "command_wall_seconds": 43.81317222910002,
+  "config_hash": "502e8dba1032869bc084c378787ede5a32f340b0de65cfa7dd08362322ebf420",
+  "dataset": "mnist",
+  "label": "D-ONLINE: B=1, n=5000",
+  "optimizer_steps": 50000,
+  "parameter_count": 109386,
+  "run_id": "D-ONLINE",
+  "samples_seen": 50000,
+  "status": "completed",
+  "wall_seconds": 43.436495408881456
+}

@@ -1,0 +1,14 @@
+run_dir=results/formal/O-MOM-0.01
+parameter_count=109386
+epoch=01 train_acc=0.9243 val_acc=0.9212 val_ce=0.2659 seconds=1.02
+epoch=02 train_acc=0.9476 val_acc=0.9430 val_ce=0.1939 seconds=1.12
+epoch=03 train_acc=0.9596 val_acc=0.9568 val_ce=0.1523 seconds=1.02
+epoch=04 train_acc=0.9669 val_acc=0.9612 val_ce=0.1324 seconds=1.03
+epoch=05 train_acc=0.9716 val_acc=0.9608 val_ce=0.1226 seconds=1.10
+epoch=06 train_acc=0.9730 val_acc=0.9640 val_ce=0.1172 seconds=1.09
+epoch=07 train_acc=0.9801 val_acc=0.9690 val_ce=0.1017 seconds=1.04
+epoch=08 train_acc=0.9815 val_acc=0.9696 val_ce=0.0994 seconds=1.01
+epoch=09 train_acc=0.9839 val_acc=0.9726 val_ce=0.0926 seconds=1.01
+epoch=10 train_acc=0.9855 val_acc=0.9730 val_ce=0.0914 seconds=1.08
+epoch=11 train_acc=0.9870 val_acc=0.9742 val_ce=0.0882 seconds=1.01
+epoch=12 train_acc=0.9879 val_acc=0.9760 val_ce=0.0848 seconds=1.01

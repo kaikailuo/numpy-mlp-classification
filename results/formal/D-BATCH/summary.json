@@ -1,0 +1,15 @@
+{
+  "best_epoch": 10,
+  "best_val_accuracy": 0.3948,
+  "best_val_ce": 1.9624437093734741,
+  "command_wall_seconds": 1.5526161261368543,
+  "config_hash": "af7dd4c6e1b1b90c5a9727304531aaff784b85a43daa1fe845bf401bc9f25fee",
+  "dataset": "mnist",
+  "label": "D-BATCH: B=5000, n=5000",
+  "optimizer_steps": 10,
+  "parameter_count": 109386,
+  "run_id": "D-BATCH",
+  "samples_seen": 50000,
+  "status": "completed",
+  "wall_seconds": 1.2077535409480333
+}

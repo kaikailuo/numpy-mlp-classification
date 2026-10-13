@@ -1,0 +1,15 @@
+{
+  "best_epoch": 12,
+  "best_val_accuracy": 0.9746,
+  "best_val_ce": 0.17718894538879396,
+  "command_wall_seconds": 18.025764296064153,
+  "config_hash": "4ad18688b354a3d0536f762f4c2195b0f1ace519b359c23ff1006596514d6d66",
+  "dataset": "mnist",
+  "label": "多类 Hinge (margin=1)",
+  "optimizer_steps": 5160,
+  "parameter_count": 109386,
+  "run_id": "L-HINGE-1",
+  "samples_seen": 660000,
+  "status": "completed",
+  "wall_seconds": 15.822257264051586
+}

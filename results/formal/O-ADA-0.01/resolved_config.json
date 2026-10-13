@@ -1,0 +1,46 @@
+{
+  "compute": {
+    "backend": "cpu",
+    "dtype": "float32"
+  },
+  "data": {
+    "name": "mnist",
+    "preprocess": "scale01",
+    "root": "data/raw/mnist",
+    "split_seed": 20261011,
+    "val_size": 5000
+  },
+  "loss": {
+    "l1_lambda": 0.0,
+    "l2_lambda": 0.0,
+    "name": "cross_entropy"
+  },
+  "model": {
+    "dims": [
+      784,
+      128,
+      64,
+      10
+    ],
+    "dropout": 0.0,
+    "dropout_seed": 44,
+    "init_seed": 42
+  },
+  "optimizer": {
+    "eps": 1e-08,
+    "learning_rate": 0.01,
+    "name": "adagrad"
+  },
+  "run": {
+    "label": "O-ADA: lr=0.01",
+    "name": "mnist_adagrad_lr0.01",
+    "output_root": "results"
+  },
+  "training": {
+    "batch_size": 128,
+    "checkpoint_best": true,
+    "epochs": 12,
+    "selection": "val_accuracy_then_val_ce",
+    "shuffle_seed": 43
+  }
+}

@@ -1,0 +1,14 @@
+run_dir=results/formal/O-SGD-0.1
+parameter_count=109386
+epoch=01 train_acc=0.9166 val_acc=0.9154 val_ce=0.2757 seconds=1.04
+epoch=02 train_acc=0.9498 val_acc=0.9456 val_ce=0.1848 seconds=1.00
+epoch=03 train_acc=0.9593 val_acc=0.9562 val_ce=0.1531 seconds=0.98
+epoch=04 train_acc=0.9683 val_acc=0.9634 val_ce=0.1274 seconds=1.03
+epoch=05 train_acc=0.9716 val_acc=0.9626 val_ce=0.1183 seconds=0.96
+epoch=06 train_acc=0.9774 val_acc=0.9672 val_ce=0.1038 seconds=1.01
+epoch=07 train_acc=0.9811 val_acc=0.9702 val_ce=0.0981 seconds=0.97
+epoch=08 train_acc=0.9825 val_acc=0.9702 val_ce=0.0967 seconds=1.01
+epoch=09 train_acc=0.9837 val_acc=0.9718 val_ce=0.0933 seconds=1.01
+epoch=10 train_acc=0.9865 val_acc=0.9738 val_ce=0.0876 seconds=0.97
+epoch=11 train_acc=0.9890 val_acc=0.9756 val_ce=0.0847 seconds=0.97
+epoch=12 train_acc=0.9897 val_acc=0.9752 val_ce=0.0804 seconds=1.00

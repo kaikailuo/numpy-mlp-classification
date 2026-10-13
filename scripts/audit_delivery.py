@@ -8,8 +8,6 @@ import json
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-from pypdf import PdfReader
-
 
 ROOT = Path(__file__).resolve().parents[1]
 FORMAL = ROOT / "results/formal"
@@ -38,7 +36,6 @@ def pytest_totals(path: Path) -> dict[str, int]:
 
 def main() -> None:
     required_run_files = {
-        "best.npz",
         "console.log",
         "data_manifest.json",
         "environment.json",
@@ -56,7 +53,6 @@ def main() -> None:
         run_ids.append(run_dir.name)
         missing = sorted(name for name in required_run_files if not (run_dir / name).is_file())
         require(not missing, f"{run_dir.name} missing {missing}")
-        require((run_dir / "best.npz").stat().st_size > 0, f"empty checkpoint: {run_dir.name}")
         summary = json.loads((run_dir / "summary.json").read_text())
         require(summary["status"] == "completed", f"incomplete run: {run_dir.name}")
         frozen_config = ROOT / "configs/formal" / f"{run_dir.name}.toml"
@@ -104,14 +100,9 @@ def main() -> None:
     require(pytest_result["tests"] == 21, f"expected 21 tests, got {pytest_result['tests']}")
     require(pytest_result["failures"] == pytest_result["errors"] == 0, "final pytest run failed")
 
-    pdf_path = ROOT / "output/pdf/A1_NumPy_MLP_Report.pdf"
-    require(pdf_path.is_file() and pdf_path.stat().st_size > 100_000, "report PDF missing or unexpectedly small")
-    reader = PdfReader(str(pdf_path))
-    require(not reader.is_encrypted, "report PDF is encrypted")
-    require(len(reader.pages) == 12, f"expected 12 report pages, found {len(reader.pages)}")
-    text = "\n".join(page.extract_text() or "" for page in reader.pages)
-    for phrase in ("96.83%", "50.39%", "97.95%", "AI Assistance and Human Verification", "Formal Run Inventory"):
-        require(phrase in text, f"report text missing: {phrase}")
+    for item in selection["selected_checkpoints"]:
+        checkpoint = ROOT / item["checkpoint"]
+        require(checkpoint.is_file() and checkpoint.stat().st_size > 0, f"missing frozen checkpoint: {item['run_id']}")
 
     record = {
         "status": "passed",
@@ -121,14 +112,8 @@ def main() -> None:
         "pytest": pytest_result,
         "gradient_max_abs_error": full_mlp_max_error,
         "tiny_overfit_accuracy": tiny["accuracy"],
-        "pdf": {
-            "path": str(pdf_path.relative_to(ROOT)),
-            "pages": len(reader.pages),
-            "bytes": pdf_path.stat().st_size,
-            "sha256": sha256(pdf_path),
-        },
     }
-    output = VERIFY / "final_delivery_audit.json"
+    output = VERIFY / "repository_v1_evidence_audit.json"
     output.write_text(json.dumps(record, indent=2) + "\n")
     print(json.dumps(record, indent=2))
 

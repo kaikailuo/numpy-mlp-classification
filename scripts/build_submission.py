@@ -9,16 +9,16 @@ from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
-ARCHIVE = DIST / "A1_NumPy_MLP_v1.1_Materials.zip"
-PACKAGE_ROOT = "A1_NumPy_MLP_v1.1_Materials"
+ARCHIVE = DIST / "numpy-mlp-classification.zip"
+PACKAGE_ROOT = "numpy-mlp-classification"
+REPORT_NAME = "2024211735-罗开炜-实验A1-实验报告.pdf"
 
-TOP_FILES = ["README.md", "pyproject.toml", "uv.lock", ".gitignore"]
+TOP_FILES = ["README.md", "pyproject.toml", "uv.lock", ".gitignore", REPORT_NAME]
 TREES = [
     "src",
     "tests",
     "configs",
     "experiments",
-    "report",
     "scripts",
     "docs",
     "data/splits",
@@ -27,7 +27,10 @@ TREES = [
     "results/expanded",
     "results/verification",
     "results/benchmarks",
-    "output/pdf",
+    "results/aggregate",
+    "results/formal",
+    "results/formal_v1_1",
+    "results/reproduction",
 ]
 
 
@@ -39,18 +42,33 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def excluded(path: Path) -> bool:
+def retained_checkpoints() -> set[Path]:
+    checkpoints = {ROOT / "results/reproduction/v1_1/B-M-clean/best.npz"}
+    for name in ("final_selection.json", "selection_v1_1.json"):
+        selection = json.loads((ROOT / "experiments" / name).read_text())
+        checkpoints.update(ROOT / item["checkpoint"] for item in selection["selected_checkpoints"])
+    return checkpoints
+
+
+def excluded(path: Path, checkpoints: set[Path]) -> bool:
     parts = set(path.parts)
-    return bool(parts & {"__pycache__", ".pytest_cache", ".DS_Store"}) or path.suffix in {".pyc", ".pyo", ".npz"} or path.name == "best.npz"
+    if parts & {"__pycache__", ".pytest_cache", ".DS_Store", ".mypy_cache", ".ruff_cache", ".idea", ".vscode"}:
+        return True
+    if path.name in {".env", "credentials.json", "secrets.json", "id_rsa", "id_ed25519"} or path.name.startswith(".env."):
+        return True
+    if path.suffix in {".pyc", ".pyo", ".zip", ".whl", ".pem", ".key", ".tmp", ".bak"} or path.name.endswith("~"):
+        return True
+    return path.suffix == ".npz" and "results" in path.relative_to(ROOT).parts and path not in checkpoints
 
 
 def collect() -> list[Path]:
+    checkpoints = retained_checkpoints()
     files = [ROOT / relative for relative in TOP_FILES]
     for relative in TREES:
         root = ROOT / relative
         if not root.exists():
             raise FileNotFoundError(f"missing package tree: {root}")
-        files.extend(path for path in root.rglob("*") if path.is_file() and not excluded(path))
+        files.extend(path for path in root.rglob("*") if path.is_file() and not excluded(path, checkpoints))
     files.append(ROOT / "results/README.md")
     unique = sorted(set(files), key=lambda path: path.relative_to(ROOT).as_posix())
     missing = [path for path in unique if not path.is_file()]
@@ -70,12 +88,12 @@ def validate_members(members: list[str]) -> None:
         f"{PACKAGE_ROOT}/results/expanded/repeat_statistics.json",
         f"{PACKAGE_ROOT}/results/verification/v1_1/final_audit_v1_1.json",
         f"{PACKAGE_ROOT}/docs/v1.1_实验结果与方法说明.md",
-        f"{PACKAGE_ROOT}/output/pdf/A1_NumPy_MLP_Report.pdf",
+        f"{PACKAGE_ROOT}/{REPORT_NAME}",
     }
     missing = sorted(required - set(members))
     if missing:
         raise AssertionError(f"archive is missing required entries: {missing}")
-    forbidden = ("data/raw/", ".venv/", "__pycache__/", ".pytest_cache/", "tmp/", "best.npz", "results/formal/")
+    forbidden = ("data/raw/", ".venv/", "__pycache__/", ".pytest_cache/", "tmp/", "output/", "report/", "dist/")
     offenders = [name for name in members if any(token in name for token in forbidden)]
     if offenders:
         raise AssertionError(f"archive contains forbidden entries: {offenders[:10]}")
@@ -102,10 +120,12 @@ def main() -> None:
         with tempfile.TemporaryDirectory(prefix="a1-v11-zip-check-") as temp_dir:
             archive.extractall(temp_dir)
             extracted = Path(temp_dir) / PACKAGE_ROOT
-            if not (extracted / "README.md").is_file():
-                raise AssertionError("extracted package validation failed")
+            for path in files:
+                relative = path.relative_to(ROOT)
+                if sha256(extracted / relative) != sha256(path):
+                    raise AssertionError(f"extracted file differs: {relative}")
     digest = sha256(ARCHIVE)
-    checksum_path = DIST / "A1_NumPy_MLP_v1.1_Materials.sha256"
+    checksum_path = DIST / "numpy-mlp-classification.sha256"
     checksum_path.write_text(f"{digest}  {ARCHIVE.name}\n")
     record = {
         "status": "passed",
@@ -114,13 +134,13 @@ def main() -> None:
         "sha256": digest,
         "file_count": len(members),
         "raw_data_included": False,
-        "checkpoints_included": False,
-        "v1_1_final_paper_included": False,
-        "legacy_v1_pdf_included_as_reference": True,
+        "checkpoints_included": True,
+        "checkpoint_count": len(retained_checkpoints()),
+        "final_report": REPORT_NAME,
         "crc_check": "passed",
         "extraction_check": "passed",
     }
-    (DIST / "submission_manifest_v1_1.json").write_text(json.dumps(record, indent=2) + "\n")
+    (DIST / "submission_manifest.json").write_text(json.dumps(record, indent=2) + "\n")
     print(json.dumps(record, indent=2))
 
 

@@ -1,0 +1,17 @@
+run_dir=/Users/luokaiwei/Projects/numpy-mlp-classification/results/formal_v1_1/S-C-ADAM-101
+parameter_count=820874
+epoch=01 train_acc=0.4696 val_acc=0.4360 val_ce=1.5912 seconds=9.33
+epoch=02 train_acc=0.5198 val_acc=0.4780 val_ce=1.5016 seconds=8.95
+epoch=03 train_acc=0.5518 val_acc=0.4902 val_ce=1.4596 seconds=8.96
+epoch=04 train_acc=0.5860 val_acc=0.5070 val_ce=1.4273 seconds=9.17
+epoch=05 train_acc=0.6084 val_acc=0.5112 val_ce=1.4213 seconds=8.97
+epoch=06 train_acc=0.6194 val_acc=0.5062 val_ce=1.4390 seconds=8.92
+epoch=07 train_acc=0.6432 val_acc=0.5212 val_ce=1.4129 seconds=9.14
+epoch=08 train_acc=0.6650 val_acc=0.5220 val_ce=1.4566 seconds=9.12
+epoch=09 train_acc=0.6835 val_acc=0.5176 val_ce=1.4726 seconds=9.04
+epoch=10 train_acc=0.7001 val_acc=0.5216 val_ce=1.4863 seconds=9.33
+epoch=11 train_acc=0.7159 val_acc=0.5158 val_ce=1.5457 seconds=9.76
+epoch=12 train_acc=0.7339 val_acc=0.5146 val_ce=1.5842 seconds=9.95
+epoch=13 train_acc=0.7592 val_acc=0.5318 val_ce=1.5675 seconds=10.06
+epoch=14 train_acc=0.7615 val_acc=0.5110 val_ce=1.6365 seconds=28.42
+epoch=15 train_acc=0.7676 val_acc=0.5120 val_ce=1.7388 seconds=11.68

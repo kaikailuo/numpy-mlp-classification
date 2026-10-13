@@ -79,11 +79,16 @@ def main() -> None:
     require(clean["status"] == clean["lightweight_reproduction"]["status"] == "passed", "reproduction evidence failed")
     aggregate_safety = json.loads((VERIFY / "aggregate_safety_check.json").read_text())
     require(aggregate_safety["status"] == "passed" and aggregate_safety["preexisting_output_preserved"], "aggregate safety check failed")
-    legacy_audit = json.loads((ROOT / "results/verification/final_delivery_audit.json").read_text())
-    legacy_pdf = ROOT / "output/pdf/A1_NumPy_MLP_Report.pdf"
-    require(sha256(legacy_pdf) == legacy_audit["pdf"]["sha256"], "legacy v1.0 PDF changed")
-    output_pdfs = list((ROOT / "output/pdf").glob("*.pdf"))
-    require(output_pdfs == [legacy_pdf], "unexpected new report PDF")
+    report = ROOT / "2024211735-罗开炜-实验A1-实验报告.pdf"
+    require(report.is_file() and report.read_bytes().startswith(b"%PDF-"), "final report PDF is missing or invalid")
+    require(not (ROOT / "output").exists() and not (ROOT / "report").exists(), "legacy report directories still exist")
+    retained_checkpoints = []
+    for name in ("final_selection.json", "selection_v1_1.json"):
+        frozen = json.loads((ROOT / "experiments" / name).read_text())
+        retained_checkpoints.extend(item["checkpoint"] for item in frozen["selected_checkpoints"])
+    retained_checkpoints.append("results/reproduction/v1_1/B-M-clean/best.npz")
+    for relative in retained_checkpoints:
+        require((ROOT / relative).is_file(), f"missing retained checkpoint: {relative}")
     record = {
         "status": "passed",
         "historical_runs": len(v1_dirs),
@@ -95,13 +100,17 @@ def main() -> None:
         "gradient_max_abs_error": max_gradient_error,
         "selected_v1_1_test_count": len(selected_ids),
         "chart_pairs": len(required_charts),
-        "legacy_pdf_preserved_sha256": sha256(legacy_pdf),
-        "v1_1_final_paper_generated": False,
+        "final_report": {
+            "path": str(report.relative_to(ROOT)),
+            "bytes": report.stat().st_size,
+            "sha256": sha256(report),
+        },
+        "retained_checkpoint_count": len(retained_checkpoints),
         "clean_environment_reproduction": "passed",
         "lightweight_reproduction": "passed",
         "incomplete_aggregate_safety": "passed",
     }
-    write_json(VERIFY / "final_audit_v1_1.json", record)
+    write_json(VERIFY / "repository_delivery_audit.json", record)
     print(json.dumps(record, indent=2))
 
 

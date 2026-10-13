@@ -1,0 +1,17 @@
+run_dir=/Users/luokaiwei/Projects/numpy-mlp-classification/results/formal_v1_1/C-DROP
+parameter_count=820874
+epoch=01 train_acc=0.4108 val_acc=0.3992 val_ce=1.7111 seconds=5.57
+epoch=02 train_acc=0.4490 val_acc=0.4390 val_ce=1.6242 seconds=5.25
+epoch=03 train_acc=0.4744 val_acc=0.4556 val_ce=1.5706 seconds=5.11
+epoch=04 train_acc=0.4905 val_acc=0.4652 val_ce=1.5415 seconds=5.07
+epoch=05 train_acc=0.5038 val_acc=0.4666 val_ce=1.5177 seconds=4.95
+epoch=06 train_acc=0.5140 val_acc=0.4848 val_ce=1.4920 seconds=4.89
+epoch=07 train_acc=0.5250 val_acc=0.4832 val_ce=1.4735 seconds=4.72
+epoch=08 train_acc=0.5335 val_acc=0.4988 val_ce=1.4592 seconds=4.89
+epoch=09 train_acc=0.5457 val_acc=0.5012 val_ce=1.4480 seconds=5.07
+epoch=10 train_acc=0.5514 val_acc=0.5008 val_ce=1.4432 seconds=4.97
+epoch=11 train_acc=0.5604 val_acc=0.5054 val_ce=1.4249 seconds=4.99
+epoch=12 train_acc=0.5660 val_acc=0.5044 val_ce=1.4162 seconds=5.18
+epoch=13 train_acc=0.5793 val_acc=0.5142 val_ce=1.4005 seconds=4.79
+epoch=14 train_acc=0.5789 val_acc=0.5128 val_ce=1.4003 seconds=5.06
+epoch=15 train_acc=0.5849 val_acc=0.5132 val_ce=1.3915 seconds=4.92

@@ -1,0 +1,15 @@
+{
+  "best_epoch": 7,
+  "best_val_accuracy": 0.9784,
+  "best_val_ce": 0.08655702921748161,
+  "command_wall_seconds": 18.36130823707208,
+  "config_hash": "600b9312eaf11bec3536f07ca5de6449d53612710b3a226b8e3f93843b1e1348",
+  "dataset": "mnist",
+  "label": "O-ADAM: lr=0.003",
+  "optimizer_steps": 5160,
+  "parameter_count": 109386,
+  "run_id": "O-ADAM-0.003",
+  "samples_seen": 660000,
+  "status": "completed",
+  "wall_seconds": 18.01320381416008
+}

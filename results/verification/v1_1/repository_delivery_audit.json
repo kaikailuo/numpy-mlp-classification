@@ -1,0 +1,31 @@
+{
+  "chart_pairs": 15,
+  "clean_env_pytest": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 40
+  },
+  "clean_environment_reproduction": "passed",
+  "failed_runs": 0,
+  "final_report": {
+    "bytes": 627856,
+    "path": "2024211735-罗开炜-实验A1-实验报告.pdf",
+    "sha256": "383be135300980c4052e73f9719238b36e22400c521000b0b9a95c49e7e40b5e"
+  },
+  "gradient_max_abs_error": 4.56128745884854e-11,
+  "historical_runs": 16,
+  "incomplete_aggregate_safety": "passed",
+  "lightweight_reproduction": "passed",
+  "new_runs": 31,
+  "pytest": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 40
+  },
+  "repeat_runs": 10,
+  "retained_checkpoint_count": 15,
+  "selected_v1_1_test_count": 4,
+  "status": "passed"
+}

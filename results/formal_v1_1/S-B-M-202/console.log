@@ -1,0 +1,14 @@
+run_dir=/Users/luokaiwei/Projects/numpy-mlp-classification/results/formal_v1_1/S-B-M-202
+parameter_count=109386
+epoch=01 train_acc=0.9117 val_acc=0.9142 val_ce=0.3210 seconds=2.20
+epoch=02 train_acc=0.9312 val_acc=0.9278 val_ce=0.2530 seconds=1.50
+epoch=03 train_acc=0.9431 val_acc=0.9420 val_ce=0.2127 seconds=1.18
+epoch=04 train_acc=0.9508 val_acc=0.9462 val_ce=0.1876 seconds=1.06
+epoch=05 train_acc=0.9575 val_acc=0.9524 val_ce=0.1662 seconds=0.97
+epoch=06 train_acc=0.9615 val_acc=0.9578 val_ce=0.1526 seconds=0.94
+epoch=07 train_acc=0.9668 val_acc=0.9606 val_ce=0.1376 seconds=0.90
+epoch=08 train_acc=0.9703 val_acc=0.9644 val_ce=0.1285 seconds=0.87
+epoch=09 train_acc=0.9717 val_acc=0.9656 val_ce=0.1232 seconds=0.85
+epoch=10 train_acc=0.9743 val_acc=0.9664 val_ce=0.1185 seconds=0.83
+epoch=11 train_acc=0.9770 val_acc=0.9670 val_ce=0.1101 seconds=0.90
+epoch=12 train_acc=0.9771 val_acc=0.9650 val_ce=0.1102 seconds=0.84

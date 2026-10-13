@@ -1,0 +1,14 @@
+run_dir=/Users/luokaiwei/Projects/numpy-mlp-classification/results/formal_v1_1/R-L2DROP
+parameter_count=109386
+epoch=01 train_acc=0.9051 val_acc=0.9042 val_ce=0.3275 seconds=2.10
+epoch=02 train_acc=0.9285 val_acc=0.9234 val_ce=0.2519 seconds=1.32
+epoch=03 train_acc=0.9399 val_acc=0.9352 val_ce=0.2127 seconds=1.36
+epoch=04 train_acc=0.9495 val_acc=0.9438 val_ce=0.1821 seconds=1.52
+epoch=05 train_acc=0.9548 val_acc=0.9478 val_ce=0.1627 seconds=1.28
+epoch=06 train_acc=0.9595 val_acc=0.9526 val_ce=0.1506 seconds=1.56
+epoch=07 train_acc=0.9639 val_acc=0.9554 val_ce=0.1386 seconds=1.41
+epoch=08 train_acc=0.9661 val_acc=0.9614 val_ce=0.1283 seconds=1.30
+epoch=09 train_acc=0.9687 val_acc=0.9628 val_ce=0.1213 seconds=1.33
+epoch=10 train_acc=0.9710 val_acc=0.9652 val_ce=0.1143 seconds=1.41
+epoch=11 train_acc=0.9732 val_acc=0.9648 val_ce=0.1115 seconds=1.28
+epoch=12 train_acc=0.9748 val_acc=0.9662 val_ce=0.1056 seconds=1.29

@@ -1,0 +1,12 @@
+run_dir=results/formal/D-BATCH
+parameter_count=109386
+epoch=01 train_acc=0.1056 val_acc=0.1024 val_ce=2.3416 seconds=0.10
+epoch=02 train_acc=0.1228 val_acc=0.1224 val_ce=2.2780 seconds=0.09
+epoch=03 train_acc=0.1472 val_acc=0.1470 val_ce=2.2279 seconds=0.09
+epoch=04 train_acc=0.1744 val_acc=0.1764 val_ce=2.1848 seconds=0.09
+epoch=05 train_acc=0.2100 val_acc=0.2100 val_ce=2.1453 seconds=0.10
+epoch=06 train_acc=0.2512 val_acc=0.2422 val_ce=2.1077 seconds=0.10
+epoch=07 train_acc=0.2884 val_acc=0.2820 val_ce=2.0710 seconds=0.10
+epoch=08 train_acc=0.3262 val_acc=0.3194 val_ce=2.0347 seconds=0.10
+epoch=09 train_acc=0.3604 val_acc=0.3550 val_ce=1.9986 seconds=0.10
+epoch=10 train_acc=0.3930 val_acc=0.3948 val_ce=1.9624 seconds=0.11

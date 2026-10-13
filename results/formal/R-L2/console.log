@@ -1,0 +1,14 @@
+run_dir=results/formal/R-L2
+parameter_count=109386
+epoch=01 train_acc=0.9022 val_acc=0.9050 val_ce=0.3300 seconds=0.93
+epoch=02 train_acc=0.9310 val_acc=0.9254 val_ce=0.2497 seconds=1.03
+epoch=03 train_acc=0.9421 val_acc=0.9388 val_ce=0.2153 seconds=1.02
+epoch=04 train_acc=0.9493 val_acc=0.9472 val_ce=0.1884 seconds=1.02
+epoch=05 train_acc=0.9569 val_acc=0.9528 val_ce=0.1633 seconds=0.97
+epoch=06 train_acc=0.9615 val_acc=0.9554 val_ce=0.1486 seconds=0.99
+epoch=07 train_acc=0.9664 val_acc=0.9604 val_ce=0.1355 seconds=1.15
+epoch=08 train_acc=0.9687 val_acc=0.9606 val_ce=0.1315 seconds=1.03
+epoch=09 train_acc=0.9709 val_acc=0.9642 val_ce=0.1220 seconds=1.00
+epoch=10 train_acc=0.9744 val_acc=0.9682 val_ce=0.1148 seconds=1.00
+epoch=11 train_acc=0.9767 val_acc=0.9682 val_ce=0.1106 seconds=1.04
+epoch=12 train_acc=0.9784 val_acc=0.9676 val_ce=0.1058 seconds=1.00

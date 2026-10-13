@@ -1,0 +1,43 @@
+{
+  "dataset": "mnist",
+  "effective_train_size": 55000,
+  "preprocess": {
+    "fit_split": "none",
+    "name": "scale01"
+  },
+  "split": {
+    "algorithm": "stratified_v1_largest_remainder",
+    "dataset": "mnist",
+    "label_sha256": "1feba77c54802fa5339a11837ea4b2866434b83314ec45192930f1df69120c13",
+    "seed": 20261011,
+    "split_sha256": "69e9c4a5d2bdf9ac85395a8ef11819be4bd88a78b1dc733be641ba751644317f",
+    "train_class_counts": [
+      5429,
+      6180,
+      5462,
+      5620,
+      5355,
+      4969,
+      5425,
+      5743,
+      5364,
+      5453
+    ],
+    "train_size": 55000,
+    "val_class_counts": [
+      494,
+      562,
+      496,
+      511,
+      487,
+      452,
+      493,
+      522,
+      487,
+      496
+    ],
+    "val_size": 5000
+  },
+  "test_loaded": false,
+  "train_subset_policy": "full_split"
+}

@@ -1,0 +1,15 @@
+{
+  "best_epoch": 12,
+  "best_val_accuracy": 0.9702,
+  "best_val_ce": 0.21659005069732665,
+  "command_wall_seconds": 15.037782854866236,
+  "config_hash": "2589eb8e75ef0dd1b3e9bfd554fa1b55a9c5986db4dee9d17561622c962fc585",
+  "dataset": "mnist",
+  "label": "标签平滑 CE (epsilon=0.1)",
+  "optimizer_steps": 5160,
+  "parameter_count": 109386,
+  "run_id": "L-LS-0.1",
+  "samples_seen": 660000,
+  "status": "completed",
+  "wall_seconds": 13.957551242085174
+}

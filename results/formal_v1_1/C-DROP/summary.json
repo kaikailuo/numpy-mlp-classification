@@ -1,0 +1,15 @@
+{
+  "best_epoch": 13,
+  "best_val_accuracy": 0.5142,
+  "best_val_ce": 1.40050662651062,
+  "command_wall_seconds": 77.84550165198743,
+  "config_hash": "7ec34bf0a7bed31a1c889ba0214fec62ef075eca2ec55d544262da5c3c461720",
+  "dataset": "cifar10",
+  "label": "CIFAR-10 Dropout=0.2",
+  "optimizer_steps": 5280,
+  "parameter_count": 820874,
+  "run_id": "C-DROP",
+  "samples_seen": 675000,
+  "status": "completed",
+  "wall_seconds": 76.84879876906052
+}

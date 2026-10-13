@@ -1,0 +1,14 @@
+run_dir=results/formal/R-DROP
+parameter_count=109386
+epoch=01 train_acc=0.9048 val_acc=0.9042 val_ce=0.3274 seconds=1.18
+epoch=02 train_acc=0.9286 val_acc=0.9240 val_ce=0.2511 seconds=1.04
+epoch=03 train_acc=0.9401 val_acc=0.9352 val_ce=0.2122 seconds=1.06
+epoch=04 train_acc=0.9496 val_acc=0.9442 val_ce=0.1814 seconds=1.06
+epoch=05 train_acc=0.9552 val_acc=0.9484 val_ce=0.1620 seconds=1.10
+epoch=06 train_acc=0.9595 val_acc=0.9516 val_ce=0.1501 seconds=1.05
+epoch=07 train_acc=0.9641 val_acc=0.9550 val_ce=0.1382 seconds=1.06
+epoch=08 train_acc=0.9663 val_acc=0.9612 val_ce=0.1276 seconds=1.10
+epoch=09 train_acc=0.9691 val_acc=0.9632 val_ce=0.1210 seconds=1.05
+epoch=10 train_acc=0.9711 val_acc=0.9650 val_ce=0.1138 seconds=1.04
+epoch=11 train_acc=0.9735 val_acc=0.9652 val_ce=0.1108 seconds=1.07
+epoch=12 train_acc=0.9751 val_acc=0.9666 val_ce=0.1049 seconds=1.18

@@ -1,0 +1,12 @@
+run_dir=results/formal/D-MINI
+parameter_count=109386
+epoch=01 train_acc=0.6944 val_acc=0.6886 val_ce=1.1176 seconds=0.11
+epoch=02 train_acc=0.6406 val_acc=0.6292 val_ce=1.0408 seconds=0.10
+epoch=03 train_acc=0.8754 val_acc=0.8658 val_ce=0.5171 seconds=0.09
+epoch=04 train_acc=0.7274 val_acc=0.7122 val_ce=0.9441 seconds=0.11
+epoch=05 train_acc=0.7364 val_acc=0.7120 val_ce=0.8287 seconds=0.10
+epoch=06 train_acc=0.8574 val_acc=0.8438 val_ce=0.4719 seconds=0.09
+epoch=07 train_acc=0.9046 val_acc=0.8860 val_ce=0.3914 seconds=0.10
+epoch=08 train_acc=0.7200 val_acc=0.7138 val_ce=0.8788 seconds=0.09
+epoch=09 train_acc=0.9050 val_acc=0.8774 val_ce=0.4070 seconds=0.09
+epoch=10 train_acc=0.9222 val_acc=0.8902 val_ce=0.3529 seconds=0.10

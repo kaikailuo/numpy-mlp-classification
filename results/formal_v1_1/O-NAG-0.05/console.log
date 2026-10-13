@@ -1,0 +1,14 @@
+run_dir=/Users/luokaiwei/Projects/numpy-mlp-classification/results/formal_v1_1/O-NAG-0.05
+parameter_count=109386
+epoch=01 train_acc=0.9595 val_acc=0.9578 val_ce=0.1444 seconds=2.46
+epoch=02 train_acc=0.9755 val_acc=0.9664 val_ce=0.1087 seconds=1.47
+epoch=03 train_acc=0.9798 val_acc=0.9706 val_ce=0.0967 seconds=1.43
+epoch=04 train_acc=0.9850 val_acc=0.9738 val_ce=0.0894 seconds=1.45
+epoch=05 train_acc=0.9887 val_acc=0.9752 val_ce=0.0851 seconds=1.52
+epoch=06 train_acc=0.9908 val_acc=0.9772 val_ce=0.0768 seconds=1.81
+epoch=07 train_acc=0.9937 val_acc=0.9766 val_ce=0.0811 seconds=1.63
+epoch=08 train_acc=0.9943 val_acc=0.9774 val_ce=0.0867 seconds=1.41
+epoch=09 train_acc=0.9970 val_acc=0.9808 val_ce=0.0806 seconds=1.43
+epoch=10 train_acc=0.9945 val_acc=0.9760 val_ce=0.1015 seconds=1.54
+epoch=11 train_acc=0.9975 val_acc=0.9804 val_ce=0.0856 seconds=1.45
+epoch=12 train_acc=0.9985 val_acc=0.9830 val_ce=0.0844 seconds=1.49

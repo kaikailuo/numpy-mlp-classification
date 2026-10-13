@@ -1,0 +1,12 @@
+run_dir=results/formal/D-ONLINE
+parameter_count=109386
+epoch=01 train_acc=0.8768 val_acc=0.8602 val_ce=0.5015 seconds=4.73
+epoch=02 train_acc=0.9156 val_acc=0.8910 val_ce=0.4278 seconds=4.34
+epoch=03 train_acc=0.8980 val_acc=0.8610 val_ce=0.5719 seconds=4.32
+epoch=04 train_acc=0.7984 val_acc=0.7664 val_ce=0.9692 seconds=4.22
+epoch=05 train_acc=0.9226 val_acc=0.8868 val_ce=0.4957 seconds=4.24
+epoch=06 train_acc=0.9210 val_acc=0.8944 val_ce=0.5173 seconds=4.24
+epoch=07 train_acc=0.9364 val_acc=0.8962 val_ce=0.4899 seconds=4.41
+epoch=08 train_acc=0.9592 val_acc=0.9168 val_ce=0.4045 seconds=4.26
+epoch=09 train_acc=0.9566 val_acc=0.9130 val_ce=0.5706 seconds=4.25
+epoch=10 train_acc=0.9566 val_acc=0.9098 val_ce=0.4812 seconds=4.24

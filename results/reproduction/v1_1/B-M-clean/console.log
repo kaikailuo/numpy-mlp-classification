@@ -1,0 +1,14 @@
+run_dir=results/reproduction/v1_1/B-M-clean
+parameter_count=109386
+epoch=01 train_acc=0.9022 val_acc=0.9050 val_ce=0.3300 seconds=0.91
+epoch=02 train_acc=0.9312 val_acc=0.9254 val_ce=0.2494 seconds=0.86
+epoch=03 train_acc=0.9425 val_acc=0.9394 val_ce=0.2144 seconds=0.84
+epoch=04 train_acc=0.9494 val_acc=0.9478 val_ce=0.1874 seconds=1.00
+epoch=05 train_acc=0.9572 val_acc=0.9522 val_ce=0.1626 seconds=0.83
+epoch=06 train_acc=0.9622 val_acc=0.9556 val_ce=0.1479 seconds=0.83
+epoch=07 train_acc=0.9668 val_acc=0.9606 val_ce=0.1351 seconds=0.85
+epoch=08 train_acc=0.9689 val_acc=0.9608 val_ce=0.1311 seconds=0.93
+epoch=09 train_acc=0.9712 val_acc=0.9644 val_ce=0.1214 seconds=0.93
+epoch=10 train_acc=0.9747 val_acc=0.9684 val_ce=0.1144 seconds=0.89
+epoch=11 train_acc=0.9771 val_acc=0.9680 val_ce=0.1098 seconds=0.89
+epoch=12 train_acc=0.9785 val_acc=0.9678 val_ce=0.1055 seconds=0.92

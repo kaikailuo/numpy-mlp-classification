@@ -1,0 +1,15 @@
+{
+  "best_epoch": 13,
+  "best_val_accuracy": 0.51,
+  "best_val_ce": 1.4439472379684448,
+  "command_wall_seconds": 87.39281872613356,
+  "config_hash": "65199e3c89243afb9a8b116becff16e4f31e86a13cb0570fc1d4fa197c350f1a",
+  "dataset": "cifar10",
+  "label": "CIFAR-10 L2=1e-4",
+  "optimizer_steps": 5280,
+  "parameter_count": 820874,
+  "run_id": "C-L2",
+  "samples_seen": 675000,
+  "status": "completed",
+  "wall_seconds": 86.36906735296361
+}
